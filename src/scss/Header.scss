@@ -1,0 +1,87 @@
+.header {
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+.header-logo-box {
+	margin-right: 40px;
+}
+.header-logo-item {
+	width: 57px;
+	height: 57px;
+}
+.header-nav-list {
+	display: flex;
+		&__item {
+			margin-right: 30px;
+		}
+}
+.header-connections {
+	display: flex;
+	margin-right: 25px;
+		&__schedule {
+			display: flex;
+			align-items: center;
+			margin-right: 20px;
+		}
+
+		&__phone {
+			display: flex;
+			align-items: center;
+		}
+
+		&__adress {
+			display: flex;
+			align-items: center;
+			margin-right: 20px;
+		}
+}
+.adress-icon-box {
+	margin-right: 6px;
+}
+.adress-icon-item {
+	width: 20px;
+	height: 20px;
+}
+.adress-text {
+	width: 170px;
+}
+.adress-box {
+	display: flex;
+	align-items: center;
+}
+.schedule-icon-box {
+	margin-right: 6px;
+}
+.schedule-icon-item {
+	width: 20px;
+	height: 20px;
+}
+.schedule-text-time {
+	margin-right: 6px;
+}
+.schedule-text-days {
+	color: rgb(145, 145, 145);
+}
+.phone-icon-box {
+	margin-right: 6px;
+}
+.phone-icon-item {
+	width: 20px;
+	height: 20px;
+}
+.phone-number {
+	font-weight: 700;
+}
+.phobe-box {
+	display: flex;
+	align-items: center;
+}
+.header-button {
+	width: 185px;
+	height: 45px;
+	border-radius: 7px;
+	background: rgb(56, 188, 234);
+	color: white;
+}
