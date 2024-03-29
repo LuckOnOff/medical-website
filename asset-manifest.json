@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/medical-website/static/css/main.a07fd763.css",
+    "main.js": "/medical-website/static/js/main.5a90d3b3.js",
+    "static/media/calendar-icon.svg": "/medical-website/static/media/calendar-icon.b8148717b4e7e3fe707b3139d190f343.svg",
+    "static/media/phone-icon.svg": "/medical-website/static/media/phone-icon.6cdb6d11b51128ac7297bd7a2fa50166.svg",
+    "static/media/location-icon.svg": "/medical-website/static/media/location-icon.171f7c9fb854dc9b2bb5ddde2b288d5e.svg",
+    "index.html": "/medical-website/index.html",
+    "main.a07fd763.css.map": "/medical-website/static/css/main.a07fd763.css.map",
+    "main.5a90d3b3.js.map": "/medical-website/static/js/main.5a90d3b3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a07fd763.css",
+    "static/js/main.5a90d3b3.js"
+  ]
+}
