@@ -1,8 +1,17 @@
-.header {
+.phobe-box, .adress-box, .header-connections__adress, .header-connections__phone, .header-connections__schedule, .header {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.phone-icon-item, .schedule-icon-item, .adress-icon-item {
+  width: 20px;
+  height: 20px;
+}
+
+.header {
   width: 100%;
+  margin-bottom: 40px;
 }
 
 .header-logo-box {
@@ -26,17 +35,9 @@
   margin-right: 25px;
 }
 .header-connections__schedule {
-  display: flex;
-  align-items: center;
   margin-right: 20px;
 }
-.header-connections__phone {
-  display: flex;
-  align-items: center;
-}
 .header-connections__adress {
-  display: flex;
-  align-items: center;
   margin-right: 20px;
 }
 
@@ -44,27 +45,12 @@
   margin-right: 6px;
 }
 
-.adress-icon-item {
-  width: 20px;
-  height: 20px;
-}
-
 .adress-text {
   width: 170px;
 }
 
-.adress-box {
-  display: flex;
-  align-items: center;
-}
-
 .schedule-icon-box {
   margin-right: 6px;
-}
-
-.schedule-icon-item {
-  width: 20px;
-  height: 20px;
 }
 
 .schedule-text-time {
@@ -79,24 +65,11 @@
   margin-right: 6px;
 }
 
-.phone-icon-item {
-  width: 20px;
-  height: 20px;
-}
-
 .phone-number {
   font-weight: 700;
-}
-
-.phobe-box {
-  display: flex;
-  align-items: center;
 }
 
 .header-button {
   width: 185px;
   height: 45px;
-  border-radius: 7px;
-  background: rgb(56, 188, 234);
-  color: white;
 }

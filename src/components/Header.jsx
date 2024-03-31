@@ -1,5 +1,5 @@
 import React from "react";
-import logo from '../img/logo.jpg';
+import logo from '../img/website-logo.jpg';
 import location from '../img/location-icon.svg';
 import calendar from '../img/calendar-icon.svg';
 import phone from '../img/phone-icon.svg'
@@ -19,7 +19,6 @@ const Header = () => {
                     <li><a href="#" className="header-nav-list__item">Услуги</a></li>
                     <li><a href="#" className="header-nav-list__item">Специалисты</a></li>
                     <li><a href="#" className="header-nav-list__item">Пациентам</a></li>
-                    <li><a href="#" className="header-nav-list__item">Контакты</a></li>
                 </ul>
             </nav>
             <section className="header-connections">
@@ -55,7 +54,7 @@ const Header = () => {
                 </a>
                 </section>
             </section>
-            <button className="header-button">
+            <button className="primary-button header-button">
                 Заказать звонок
             </button>
         </header>

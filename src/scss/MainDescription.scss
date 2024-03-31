@@ -1,0 +1,136 @@
+%flex-element-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%pluses-decorate {
+    height: 60px;
+    backdrop-filter: blur(19px);
+    background: rgba(255, 255, 255, 0.4);
+}
+
+%size-icon {
+    width: 40px;
+    height: 40px;
+}
+.main-description {
+    width: 100%;
+    height: 580px;
+    background: url(../img/main-description-bg.jfif) center/1775px no-repeat;
+    position: relative;
+    &__info {
+        width: 460px;
+        position: absolute;
+        left: 20px;
+        top: 140px;
+    }
+
+    &__pluses {
+        @extend %flex-element-center;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+    }
+
+    &__pluses-team {
+        @extend %flex-element-center;
+        justify-content: flex-end;
+        width: 30%;
+        margin-right: 15px;
+        @extend %pluses-decorate;
+    }
+
+    &__pluses-cabinet {
+        @extend %flex-element-center;
+        width: 40%;
+        @extend %pluses-decorate;
+    }
+
+    &__pluses-location {
+        @extend %flex-element-center;
+        justify-content: flex-start;
+        width: 30%;
+        margin-left: 15px;
+        @extend %pluses-decorate;
+    }
+}
+.info-decorate-container {
+    width: 500px;
+    height: 580px;
+    background: linear-gradient(90.00deg, rgb(255, 255, 255) 48.074%,rgba(255, 255, 255, 0) 100%);
+}
+.info-conteiner {
+
+    &__location {
+        line-height: 23px;
+        margin-bottom: 15px;
+        font-size: 18px;
+    }
+
+    &__title {
+        line-height: 104%;
+        width: 300px;
+        font-size: 40px;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+
+    &__subtitle {
+        color: rgb(62, 62, 62);
+        font-size: 18px;
+        width: 310px;
+        line-height: 23px;
+        margin-bottom: 20px;
+    }
+
+    &__button {
+        width: 200px;
+        height: 40px;   
+    }
+}
+.pluses-team {
+    &__icon-box {
+        margin-right: 5px;
+    }
+
+    &__icon {
+        @extend %size-icon;
+    }
+
+    &__text-box {
+        width: 220px;
+    }
+}
+.pluses-cabinet {
+    &__icon-box {
+        margin-right: 10px;
+    }
+
+    &__icon {
+        @extend %size-icon;
+    }
+
+    &__amount {
+        display: block;
+        margin-bottom: -2px;
+    }
+
+    &__text-box {
+        width: 200px;
+    }
+}
+.pluses-location {
+    &__icon-box {
+        margin-right: 10px;
+    }
+
+    &__icon {
+        @extend %size-icon;
+    }
+
+    &__text-box {
+        width: 160px;
+    }
+}

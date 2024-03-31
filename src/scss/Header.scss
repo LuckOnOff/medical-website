@@ -1,8 +1,18 @@
-.header {
+%flex-element-center {
     display: flex;
-	justify-content: center;
-	align-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+%size-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.header {
+    @extend %flex-element-center;
 	width: 100%;
+	margin-bottom: 40px;
 }
 .header-logo-box {
 	margin-right: 40px;
@@ -21,19 +31,16 @@
 	display: flex;
 	margin-right: 25px;
 		&__schedule {
-			display: flex;
-			align-items: center;
+			@extend %flex-element-center;
 			margin-right: 20px;
 		}
 
 		&__phone {
-			display: flex;
-			align-items: center;
+			@extend %flex-element-center;
 		}
 
 		&__adress {
-			display: flex;
-			align-items: center;
+			@extend %flex-element-center;
 			margin-right: 20px;
 		}
 }
@@ -41,22 +48,19 @@
 	margin-right: 6px;
 }
 .adress-icon-item {
-	width: 20px;
-	height: 20px;
+	@extend %size-icon;
 }
 .adress-text {
 	width: 170px;
 }
 .adress-box {
-	display: flex;
-	align-items: center;
+	@extend %flex-element-center;
 }
 .schedule-icon-box {
 	margin-right: 6px;
 }
 .schedule-icon-item {
-	width: 20px;
-	height: 20px;
+	@extend %size-icon;
 }
 .schedule-text-time {
 	margin-right: 6px;
@@ -68,20 +72,15 @@
 	margin-right: 6px;
 }
 .phone-icon-item {
-	width: 20px;
-	height: 20px;
+	@extend %size-icon;
 }
 .phone-number {
 	font-weight: 700;
 }
 .phobe-box {
-	display: flex;
-	align-items: center;
+	@extend %flex-element-center;
 }
 .header-button {
 	width: 185px;
 	height: 45px;
-	border-radius: 7px;
-	background: rgb(56, 188, 234);
-	color: white;
 }

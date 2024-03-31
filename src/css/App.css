@@ -24,7 +24,23 @@ button {
 #root {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  margin: 30px 80px;
-  min-height: 100%;
+  margin: 30px 20px;
+}
+
+.container {
+  padding: 0 20px;
+}
+
+.primary-button {
+  border-radius: 7px;
+  background: rgb(56, 188, 234);
+  color: white;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
