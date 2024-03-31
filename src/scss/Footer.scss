@@ -1,0 +1,62 @@
+%flex-element-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%size-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.footer {
+    @extend %flex-element-center;
+    justify-content: space-between;
+    width: 100%;
+}
+.footer-media-network {
+        &__vk-box {
+            display: inline-block;
+            margin-right: 20px;
+            height: 30px;
+        }
+
+		&__vk {
+            @extend %size-icon;
+		}
+
+        &__tg-box {
+            display: inline-block;
+            margin-right: 20px;
+            height: 30px;
+        }
+
+		&__tg {
+            @extend %size-icon;
+		}
+
+        &__email-box {
+            display: inline-block;
+            height: 30px;
+        }
+
+		&__email {
+            @extend %size-icon;
+		}
+}
+.footer-license {
+    @extend %flex-element-center;
+    flex-direction: column;
+}
+.footer-personal-info {
+    width: 200px;
+		&__text {
+            text-decoration: underline;
+		}
+}
+.footer-logo-box {
+    &__img {
+        width: 65px;
+        height: 60px;
+    }
+}

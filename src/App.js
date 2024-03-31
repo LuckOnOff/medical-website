@@ -3,6 +3,7 @@ import Header from './components/Header.jsx';
 import MainDescription from './components/MainDescription.jsx';
 import MainPatientsTrustUs from './components/MainPatientsTrustUs.jsx';
 import MainConsultation from './components/MainConsultation.jsx';
+import Footer from './components/Footer.jsx';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
           <MainPatientsTrustUs/>
           <MainConsultation/>
         </main>
+        <Footer/>
     </section>
   );
 }
