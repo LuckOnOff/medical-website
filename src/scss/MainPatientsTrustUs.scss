@@ -21,13 +21,9 @@
     margin-bottom: 5px;
 }
 
-%subtitle-style {
-
-}
-
 .patients-trust {
     width: 100%;
-    margin-bottom: 60px;
+    margin-bottom: 200px;
     &__title {
         font-size: 32px;
         font-weight: 700;
@@ -49,9 +45,6 @@
     &__title {
         @extend %title-style;
     }
-
-    &__subtitle {
-    }
 }
 .reasons-two {
     @extend %reasons-decorate;
@@ -62,9 +55,6 @@
     &__title {
         @extend %title-style;
     }
-
-    &__subtitle {
-    }
 }
 .reasons-three {
     @extend %reasons-decorate;
@@ -74,8 +64,5 @@
 
     &__title {
         @extend %title-style;
-    }
-
-    &__subtitle {
     }
 }

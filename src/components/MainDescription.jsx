@@ -4,8 +4,6 @@ import armchair from "../img/main-description-armchair-icon.svg";
 import location from "../img/location-icon.svg";
 import "../css/MainDescription.css";
 
-
-
 const MainDescription = () => {
     return (
         <section className="main-description">

@@ -22,6 +22,7 @@
   background: url(../img/main-description-bg.jpg) center/1775px no-repeat;
   position: relative;
   margin-bottom: 80px;
+  border-radius: 5px;
 }
 .main-description__info {
   width: 460px;

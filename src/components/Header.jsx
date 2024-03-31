@@ -44,7 +44,7 @@ const Header = () => {
                     </span>
                 </section>
                 <section className="header-connections__phone">
-                <a href="tel:+79003331040" className="phobe-box">
+                <a href="tel:+7 900 333 10 40" className="phone-box">
                     <div className="phone-icon-box">
                         <img src={phone} alt="Телефон" className="phone-icon-item"/>
                     </div>

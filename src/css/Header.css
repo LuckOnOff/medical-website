@@ -1,4 +1,4 @@
-.phobe-box, .adress-box, .header-connections__adress, .header-connections__phone, .header-connections__schedule, .header {
+.phone-box, .adress-box, .header-connections__adress, .header-connections__phone, .header-connections__schedule, .header {
   display: flex;
   justify-content: center;
   align-items: center;
