@@ -9,6 +9,10 @@
     height: 20px;
 }
 
+%icon-box-mr {
+	margin-right: 6px;
+}
+
 .header {
     @extend %flex-element-center;
 	width: 100%;
@@ -45,7 +49,7 @@
 		}
 }
 .adress-icon-box {
-	margin-right: 6px;
+	@extend %icon-box-mr;
 }
 .adress-icon-item {
 	@extend %size-icon;
@@ -57,19 +61,19 @@
 	@extend %flex-element-center;
 }
 .schedule-icon-box {
-	margin-right: 6px;
+	@extend %icon-box-mr;
 }
 .schedule-icon-item {
 	@extend %size-icon;
 }
 .schedule-text-time {
-	margin-right: 6px;
+	@extend %icon-box-mr;
 }
 .schedule-text-days {
 	color: rgb(145, 145, 145);
 }
 .phone-icon-box {
-	margin-right: 6px;
+	@extend %icon-box-mr;
 }
 .phone-icon-item {
 	@extend %size-icon;

@@ -1,0 +1,81 @@
+%flex-element-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%reasons-decorate {
+    width: 262px;
+    height: 125px;
+}
+
+%count-style {
+    color: rgb(56, 188, 234);
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+%title-style {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+%subtitle-style {
+
+}
+
+.patients-trust {
+    width: 100%;
+    margin-bottom: 60px;
+    &__title {
+        font-size: 32px;
+        font-weight: 700;
+        margin-bottom: 50px;
+    }
+
+    &__reasons {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+}
+.reasons-one {
+    @extend %reasons-decorate;
+    &__count {
+        @extend %count-style;
+    }
+
+    &__title {
+        @extend %title-style;
+    }
+
+    &__subtitle {
+    }
+}
+.reasons-two {
+    @extend %reasons-decorate;
+    &__count {
+        @extend %count-style;
+    }
+
+    &__title {
+        @extend %title-style;
+    }
+
+    &__subtitle {
+    }
+}
+.reasons-three {
+    @extend %reasons-decorate;
+    &__count {
+        @extend %count-style;
+    }
+
+    &__title {
+        @extend %title-style;
+    }
+
+    &__subtitle {
+    }
+}

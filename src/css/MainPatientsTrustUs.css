@@ -1,0 +1,31 @@
+.reasons-three, .reasons-two, .reasons-one {
+  width: 262px;
+  height: 125px;
+}
+
+.reasons-three__count, .reasons-two__count, .reasons-one__count {
+  color: rgb(56, 188, 234);
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.reasons-three__title, .reasons-two__title, .reasons-one__title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.patients-trust {
+  width: 100%;
+  margin-bottom: 60px;
+}
+.patients-trust__title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+.patients-trust__reasons {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}

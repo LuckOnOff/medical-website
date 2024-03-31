@@ -9,6 +9,10 @@
   height: 20px;
 }
 
+.phone-icon-box, .schedule-text-time, .schedule-icon-box, .adress-icon-box {
+  margin-right: 6px;
+}
+
 .header {
   width: 100%;
   margin-bottom: 40px;
@@ -41,28 +45,12 @@
   margin-right: 20px;
 }
 
-.adress-icon-box {
-  margin-right: 6px;
-}
-
 .adress-text {
   width: 170px;
 }
 
-.schedule-icon-box {
-  margin-right: 6px;
-}
-
-.schedule-text-time {
-  margin-right: 6px;
-}
-
 .schedule-text-days {
   color: rgb(145, 145, 145);
-}
-
-.phone-icon-box {
-  margin-right: 6px;
 }
 
 .phone-number {
