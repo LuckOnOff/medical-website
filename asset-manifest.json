@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/medical-website/static/css/main.b68bd633.css",
-    "main.js": "/medical-website/static/js/main.93e64ba2.js",
+    "main.js": "/medical-website/static/js/main.3db83222.js",
     "static/media/main-consultation-woman.png": "/medical-website/static/media/main-consultation-woman.2c468fef26f57e31ccdc.png",
     "static/media/main-description-bg.jpg": "/medical-website/static/media/main-description-bg.75d189acf66140e8de07.jpg",
     "static/media/main-description-armchair-icon.svg": "/medical-website/static/media/main-description-armchair-icon.e7486f6470e217692c54bfe8ff854f70.svg",
@@ -11,10 +11,10 @@
     "static/media/location-icon.svg": "/medical-website/static/media/location-icon.171f7c9fb854dc9b2bb5ddde2b288d5e.svg",
     "index.html": "/medical-website/index.html",
     "main.b68bd633.css.map": "/medical-website/static/css/main.b68bd633.css.map",
-    "main.93e64ba2.js.map": "/medical-website/static/js/main.93e64ba2.js.map"
+    "main.3db83222.js.map": "/medical-website/static/js/main.3db83222.js.map"
   },
   "entrypoints": [
     "static/css/main.b68bd633.css",
-    "static/js/main.93e64ba2.js"
+    "static/js/main.3db83222.js"
   ]
 }
