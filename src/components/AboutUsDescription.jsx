@@ -2,9 +2,9 @@ import React from "react";
 import doctor from "../img/main-description-doctor-icon.svg";
 import armchair from "../img/main-description-armchair-icon.svg";
 import location from "../img/location-icon.svg";
-import "../css/MainDescription.css";
+import "../css/AboutUsDescription.css";
 
-const MainDescription = () => {
+const AboutUsDescription = () => {
     return (
         <section className="main-description">
             <div className="info-decorate-container">
@@ -47,4 +47,4 @@ const MainDescription = () => {
     )
 }
 
-export default MainDescription;
+export default AboutUsDescription;

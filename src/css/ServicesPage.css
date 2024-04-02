@@ -1,0 +1,88 @@
+.text-container, .offers-container, .offers, .services-display__footer-buttons, .services-display__header-buttons, .services, .footer-buttons__surgery, .footer-buttons__crowns, .footer-buttons__veneers, .header-buttons__implants, .header-buttons__childrensDentistry, .header-buttons__braces, .header-buttons__hygiene, .header-buttons__heal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-buttons__surgery, .footer-buttons__crowns, .footer-buttons__veneers, .header-buttons__implants, .header-buttons__childrensDentistry, .header-buttons__braces, .header-buttons__hygiene, .header-buttons__heal {
+  flex-direction: column;
+  cursor: pointer;
+  margin-right: 25px;
+  width: 20%;
+  height: 150px;
+  border-radius: 5px;
+  box-shadow: 0px 20px 50px 0px rgba(165, 165, 165, 0.2);
+}
+
+.surgery-img, .crowns-img, .veneers-img, .implants-img, .childrensDentistry-img, .braces-img, .hygiene-img, .heal-img {
+  width: 70px;
+  height: 70px;
+}
+
+.surgery-title, .crowns-title, .veneers-title, .implants-title, .childrensDentistry-title, .braces-title, .hygiene-title, .heal-title {
+  margin-top: 10px;
+}
+
+.services {
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.services-title {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.services-subtitle {
+  width: 230px;
+  margin-bottom: 8px;
+}
+
+.services-display {
+  width: 100%;
+}
+.services-display__offers {
+  margin: 50px 0;
+}
+.header-buttons {
+  width: 100%;
+}
+.braces-img {
+  width: 95px;
+}
+
+.offers {
+  flex-direction: column;
+  width: 100%;
+}
+
+.offers-container {
+  align-items: baseline;
+  width: 100%;
+}
+.offers-container__price {
+  font-weight: 700;
+}
+.offers-container__button {
+  width: 200px;
+  height: 50px;
+  margin-left: 20px;
+}
+
+.text-container {
+  justify-content: space-between;
+  width: 100%;
+  height: 50px;
+  background: rgb(236, 236, 236);
+  border-radius: 7px;
+  margin-bottom: 15px;
+  padding: 0 15px;
+}
+
+.footer-buttons {
+  width: 100%;
+}
+.veneers-img {
+  width: 100px;
+}

@@ -1,7 +1,7 @@
 import React from "react";
-import "../css/MainPatientsTrustUs.css";
+import "../css/AboutUsPatientsTrustUs.css";
 
-const MainPatientsTrustUs = () => {
+const AboutUsPatientsTrustUs = () => {
     return (
         <section className="patients-trust">
             <h2 className="patients-trust__title">Нам доверяют пациенты</h2>
@@ -29,4 +29,4 @@ const MainPatientsTrustUs = () => {
     )
 }
 
-export default MainPatientsTrustUs;
+export default AboutUsPatientsTrustUs;

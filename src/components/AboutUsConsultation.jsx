@@ -1,8 +1,8 @@
 import React from "react";
 import callWoman from "../img/main-consultation-woman.png";
-import "../css/MainConsultation.css";
+import "../css/AboutUsConsultation.css";
 
-const MainConsultation = () => {
+const AboutUsConsultation = () => {
     return (
         <section className="main-consultation">
             <section className="main-consultation__connection">
@@ -28,4 +28,4 @@ const MainConsultation = () => {
     )
 }
 
-export default MainConsultation;
+export default AboutUsConsultation;
