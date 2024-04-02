@@ -1,9 +1,17 @@
 {
   "files": {
-    "main.css": "/medical-website/static/css/main.7f917ed6.css",
-    "main.js": "/medical-website/static/js/main.a6c7cca0.js",
+    "main.css": "/medical-website/static/css/main.e7ad3195.css",
+    "main.js": "/medical-website/static/js/main.2b9fb3c2.js",
     "static/media/main-consultation-woman.png": "/medical-website/static/media/main-consultation-woman.2c468fef26f57e31ccdc.png",
     "static/media/main-description-bg.jpg": "/medical-website/static/media/main-description-bg.75d189acf66140e8de07.jpg",
+    "static/media/main-services-dental-treatment.png": "/medical-website/static/media/main-services-dental-treatment.924b57b68db8432bda65.png",
+    "static/media/main-services-veneers.jfif": "/medical-website/static/media/main-services-veneers.d2ccce4dd83cbffa1b81.jfif",
+    "static/media/main-services-children's-dentistry.jfif": "/medical-website/static/media/main-services-children's-dentistry.7e500e0864928be31e1c.jfif",
+    "static/media/main-services-surgery.jfif": "/medical-website/static/media/main-services-surgery.20057d1154f4346affd3.jfif",
+    "static/media/main-services-braces.jfif": "/medical-website/static/media/main-services-braces.acd9b6c157ff7c6d638b.jfif",
+    "static/media/main-services-crowns.jfif": "/medical-website/static/media/main-services-crowns.5b0ebaf8818a39495f6f.jfif",
+    "static/media/main-services-implants.jfif": "/medical-website/static/media/main-services-implants.3baa13ad7cff2e79f18f.jfif",
+    "static/media/main-services-hygiene.jfif": "/medical-website/static/media/main-services-hygiene.80efe8b393451d5f3800.jfif",
     "static/media/main-description-armchair-icon.svg": "/medical-website/static/media/main-description-armchair-icon.e7486f6470e217692c54bfe8ff854f70.svg",
     "static/media/main-description-doctor-icon.svg": "/medical-website/static/media/main-description-doctor-icon.2affaffc403156ef9b37f8f06a4053bf.svg",
     "static/media/calendar-icon.svg": "/medical-website/static/media/calendar-icon.b8148717b4e7e3fe707b3139d190f343.svg",
@@ -13,11 +21,11 @@
     "static/media/location-icon.svg": "/medical-website/static/media/location-icon.171f7c9fb854dc9b2bb5ddde2b288d5e.svg",
     "static/media/email-icon.svg": "/medical-website/static/media/email-icon.33a78295f8d77a99449e837cea7dae9e.svg",
     "index.html": "/medical-website/index.html",
-    "main.7f917ed6.css.map": "/medical-website/static/css/main.7f917ed6.css.map",
-    "main.a6c7cca0.js.map": "/medical-website/static/js/main.a6c7cca0.js.map"
+    "main.e7ad3195.css.map": "/medical-website/static/css/main.e7ad3195.css.map",
+    "main.2b9fb3c2.js.map": "/medical-website/static/js/main.2b9fb3c2.js.map"
   },
   "entrypoints": [
-    "static/css/main.7f917ed6.css",
-    "static/js/main.a6c7cca0.js"
+    "static/css/main.e7ad3195.css",
+    "static/js/main.2b9fb3c2.js"
   ]
 }
