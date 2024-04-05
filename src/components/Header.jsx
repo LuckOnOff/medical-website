@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from '../img/website-logo.jpg';
 import location from '../img/location-icon.svg';
 import calendar from '../img/calendar-icon.svg';
 import phone from '../img/phone-icon.svg'
 import '../css/Header.css';
 
-const Header = () => {
+const Header = ({ onPageChange }) => {
+    const [activeButton, setActiveButton] = useState('about');
+
+    const setButton = (page) => {
+        setActiveButton(page);
+    }
     return (
         <header className="header">
             <div className="header-logo-box">
@@ -15,10 +20,38 @@ const Header = () => {
             </div>
             <nav>
                 <ul className="header-nav-list">
-                    <li><a href="#" className="header-nav-list__item">О нас</a></li>
-                    <li><a href="#" className="header-nav-list__item">Услуги</a></li>
-                    <li><a href="#" className="header-nav-list__item">Специалисты</a></li>
-                    <li><a href="#" className="header-nav-list__item">Пациентам</a></li>
+                    <li>
+                        <a
+                            href="#"
+                            className={`header-nav-list__item about ${activeButton === 'about' ? 'active' : ''}`}
+                            onClick={() => { onPageChange('about'); setButton('about'); }}>
+                            О нас
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="#"
+                            className={`header-nav-list__item services ${activeButton === 'services' && 'active'}`}
+                            onClick={() => { onPageChange('services'); setButton('services'); }}>
+                            Услуги
+                        </a>
+                    </li>
+                    <li>
+                        <a 
+                            href="#" 
+                            className={`header-nav-list__item specialists ${activeButton === 'specialists' ? 'active' : ''}`} 
+                            onClick={() => { onPageChange('specialists'); setButton('specialists'); }}>
+                            Специалисты
+                        </a>
+                    </li>
+                    <li>
+                        <a 
+                            href="#" 
+                            className='header-nav-list__item'>
+
+                            Пациентам
+                        </a>
+                    </li>
                 </ul>
             </nav>
             <section className="header-connections">

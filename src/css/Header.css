@@ -34,6 +34,18 @@
   margin-right: 30px;
 }
 
+.about.active {
+  color: rgb(1, 103, 138);
+}
+
+.services.active {
+  color: rgb(1, 103, 138);
+}
+
+.specialists.active {
+  color: rgb(1, 103, 138);
+}
+
 .header-connections {
   display: flex;
   margin-right: 25px;

@@ -1,18 +1,25 @@
-import React from "react";
-import AboutUsDescription from '../components/AboutUsDescription.jsx';
-import AboutUsPatientsTrustUs from '../components/AboutUsPatientsTrustUs.jsx';
-import AboutUsConsultation from '../components/AboutUsConsultation.jsx';
+import React, { useState } from "react";
+import AboutUsPage from "./AboutUsPage.jsx";
 import ServicesPage from "./ServicesPage.jsx";
 import SpecialistsPage from "./SpecialistsPage.jsx";
 
-const Main = () => {
+const Main = ({ currentPage }) => {
+    const renderPage = () => {
+        switch (currentPage) {
+            case 'about':
+                return <AboutUsPage />;
+            case 'services':
+                return <ServicesPage />;
+            case 'specialists':
+                return <SpecialistsPage />;
+            default:
+                return <AboutUsPage />;
+        }
+    }
+
     return (
         <main className='main'>
-            <SpecialistsPage/>
-{/*             <ServicesPage/>
-            <AboutUsDescription/>
-            <AboutUsPatientsTrustUs/>
-            <AboutUsConsultation/> */}
+            {renderPage()}
         </main>
     )
 }

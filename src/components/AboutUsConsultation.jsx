@@ -10,7 +10,7 @@ const AboutUsConsultation = () => {
                 <p className="connection-subtitle">Укажите cвой номер телефона, мы перезвоним
                 и подберем для вас удобное время для консультации.
                 <span className="connection-subtitle-two">Или позвоните нам сами — <a href="tel:+7 900 333 10 40" className="connection-subtitle__tel">+7 900 333 10 40</a></span></p>
-                <form /* action="URL" method="post" */ name="call" className="connection-form">
+                <form name="call" className="connection-form">
                     <label htmlFor="phone" className="connection-form__label">
                         <input type="tel" autoComplete="on" placeholder="Телефон" className="connection-form__input" id="phone"/>
                         <button className="primary-button connection-form__button" type="submit">Записаться на прием</button>
