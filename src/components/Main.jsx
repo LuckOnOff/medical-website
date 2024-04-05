@@ -3,12 +3,14 @@ import AboutUsDescription from '../components/AboutUsDescription.jsx';
 import AboutUsPatientsTrustUs from '../components/AboutUsPatientsTrustUs.jsx';
 import AboutUsConsultation from '../components/AboutUsConsultation.jsx';
 import ServicesPage from "./ServicesPage.jsx";
+import SpecialistsPage from "./SpecialistsPage.jsx";
 
 const Main = () => {
     return (
         <main className='main'>
-            <ServicesPage/>
-{/*         <AboutUsDescription/>
+            <SpecialistsPage/>
+{/*             <ServicesPage/>
+            <AboutUsDescription/>
             <AboutUsPatientsTrustUs/>
             <AboutUsConsultation/> */}
         </main>

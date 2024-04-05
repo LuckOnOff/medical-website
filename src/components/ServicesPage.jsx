@@ -19,7 +19,6 @@ const ServicesPage = () => {
     ]);
 
     const handleButtonClick = (category) => {
-        // Фильтрация услуг по выбранной категории
         let filteredOffers = allOffers.filter(offer => offer.category === category);
         setCurrentOffers(filteredOffers);
       };
