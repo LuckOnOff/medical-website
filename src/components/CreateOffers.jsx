@@ -1,7 +1,12 @@
 import React from "react";
 
-const CreateOffers = ({offers}) => {
+const CreateOffers = ({offers, onOpenModal}) => {
+  const handleClick = () => {
+    onOpenModal();
+  };
+
   if(offers.length < 1) return;
+
     return (
         <div className='offers'>
           {offers.map((offer) => (
@@ -10,7 +15,7 @@ const CreateOffers = ({offers}) => {
                 <h3 className='offers-container__title'>{offer.title}</h3>
                 <p className='offers-container__price'>{offer.price}</p>
               </div>
-              <button className='primary-button offers-container__button'>{offer.buttonText}</button>
+              <button className='primary-button offers-container__button' onClick={handleClick}>{offer.buttonText}</button>
             </div>
           ))}
         </div>

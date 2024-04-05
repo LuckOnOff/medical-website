@@ -1,0 +1,42 @@
+%button-style {
+    width: 150px;
+    height: 40px;
+}
+.window {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgb(45, 96, 189);
+    color: white;
+    border-radius: 8px;
+    width: 400px;
+    padding: 30px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    &__text {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    &__input {
+        width: 100%;
+        height: 30px;
+        border-radius: 7px;
+        padding: 0 10px;
+        margin: 20px 0;
+    }
+}
+.button-box {
+    display: flex;
+    justify-content: space-between;
+    &__button-submit{
+        @extend %button-style;
+    }
+
+    &__button-reset{
+        @extend %button-style;
+    }
+}

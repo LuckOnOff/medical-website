@@ -1,17 +1,20 @@
-import React, { useState } from "react";
+import React from "react";
 import AboutUsPage from "./AboutUsPage.jsx";
 import ServicesPage from "./ServicesPage.jsx";
 import SpecialistsPage from "./SpecialistsPage.jsx";
+import PatientsPage from "./PatientsPage.jsx";
 
-const Main = ({ currentPage }) => {
+const Main = ({ currentPage, onOpenModal }) => {
     const renderPage = () => {
         switch (currentPage) {
             case 'about':
-                return <AboutUsPage />;
+                return <AboutUsPage openModal={onOpenModal}/>;
             case 'services':
-                return <ServicesPage />;
+                return <ServicesPage openModal={onOpenModal}/>;
             case 'specialists':
-                return <SpecialistsPage />;
+                return <SpecialistsPage/>;
+            case 'patients':
+                return <PatientsPage/>;
             default:
                 return <AboutUsPage />;
         }

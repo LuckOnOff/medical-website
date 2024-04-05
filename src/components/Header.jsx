@@ -2,15 +2,19 @@ import React, { useState } from "react";
 import logo from '../img/website-logo.jpg';
 import location from '../img/location-icon.svg';
 import calendar from '../img/calendar-icon.svg';
-import phone from '../img/phone-icon.svg'
+import phone from '../img/phone-icon.svg';
 import '../css/Header.css';
 
-const Header = ({ onPageChange }) => {
+const Header = ({ onPageChange, onOpenModal }) => {
     const [activeButton, setActiveButton] = useState('about');
 
     const setButton = (page) => {
         setActiveButton(page);
     }
+
+    const handleClick = () => {
+        onOpenModal();
+    };
     return (
         <header className="header">
             <div className="header-logo-box">
@@ -47,8 +51,8 @@ const Header = ({ onPageChange }) => {
                     <li>
                         <a 
                             href="#" 
-                            className='header-nav-list__item'>
-
+                            className={`header-nav-list__item patients ${activeButton === 'patients' ? 'active' : ''}`}
+                            onClick={() => { onPageChange('patients'); setButton('patients'); }}>
                             Пациентам
                         </a>
                     </li>
@@ -87,7 +91,7 @@ const Header = ({ onPageChange }) => {
                 </a>
                 </section>
             </section>
-            <button className="primary-button header-button">
+            <button className="primary-button header-button" onClick={handleClick}>
                 Заказать звонок
             </button>
         </header>

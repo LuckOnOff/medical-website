@@ -58,21 +58,41 @@
             @extend %button-style;
 		}
 
+        &__heal.active {
+            background: rgb(197, 233, 245);;
+        }
+
 		&__hygiene {
             @extend %button-style;
 		}
 
+        &__hygiene.active {
+            background: rgb(197, 233, 245);;
+        }
+
 		&__braces {
             @extend %button-style;
 		}
+        
+        &__braces.active {
+            background: rgb(197, 233, 245);;
+        }
 
 		&__childrensDentistry {
             @extend %button-style;
 		}
 
+        &__childrensDentistry.active {
+            background: rgb(197, 233, 245);;
+        }
+
 		&__implants {
             @extend %button-style;
 		}
+
+        &__implants.active {
+            background: rgb(197, 233, 245);;
+        }
 }
 .heal-img {
     @extend %img-style;
@@ -88,7 +108,6 @@
 }
 .braces-img {
     @extend %img-style;
-    width: 95px;
 }
 .braces-title {
     @extend %title-style;
@@ -143,17 +162,28 @@
             @extend %button-style;
 		}
 
+        &__veneers.active {
+            background: rgb(197, 233, 245);;
+        }
+
 		&__crowns {
             @extend %button-style;
 		}
 
+        &__crowns.active {
+            background: rgb(197, 233, 245);;
+        }
+
 		&__surgery {
             @extend %button-style;
 		}
+
+        &__surgery.active {
+            background: rgb(197, 233, 245);;
+        }
 }
 .veneers-img {
     @extend %img-style;
-    width: 100px;
 }
 .veneers-title {
     @extend %title-style;

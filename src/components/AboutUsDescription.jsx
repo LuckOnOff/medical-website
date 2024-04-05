@@ -4,7 +4,10 @@ import armchair from "../img/main-description-armchair-icon.svg";
 import location from "../img/location-icon.svg";
 import "../css/AboutUsDescription.css";
 
-const AboutUsDescription = () => {
+const AboutUsDescription = ({ onOpenModal }) => {
+    const handleClick = () => {
+        onOpenModal();
+    };
     return (
         <section className="main-description">
             <div className="info-decorate-container">
@@ -13,7 +16,7 @@ const AboutUsDescription = () => {
                 <h1 className="info-conteiner__title">Лечение зубов в тот же день</h1>
                 <p className="info-conteiner__subtitle">Мы проведем полную консультацию, профессиональную
                 гигиену полости рта, лечение зубов и десен</p>
-                <button className="primary-button info-conteiner__button">Записаться на приём</button>
+                <button className="primary-button info-conteiner__button" onClick={handleClick}>Записаться на приём</button>
             </section>
             </div>
             <section className="main-description__pluses">

@@ -17,7 +17,6 @@ li {
 }
 
 button {
-  cursor: pointer;
   font-family: inherit;
 }
 
@@ -28,7 +27,10 @@ button {
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
   max-width: 1280px;
+  min-height: calc(100vh - 30px);
   padding: 0 20px;
 }
 
@@ -36,6 +38,7 @@ button {
   border-radius: 7px;
   background: rgb(56, 188, 234);
   color: white;
+  cursor: pointer;
 }
 
 .main {
@@ -44,4 +47,5 @@ button {
   justify-content: center;
   align-items: center;
   width: 100%;
+  flex: 1;
 }

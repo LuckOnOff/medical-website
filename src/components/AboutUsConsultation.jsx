@@ -2,7 +2,11 @@ import React from "react";
 import callWoman from "../img/main-consultation-woman.png";
 import "../css/AboutUsConsultation.css";
 
-const AboutUsConsultation = () => {
+const AboutUsConsultation = ({ onOpenModal }) => {
+    const handleClick = (e) => {
+        e.preventDefault();
+        onOpenModal();
+    };
     return (
         <section className="main-consultation">
             <section className="main-consultation__connection">
@@ -13,7 +17,13 @@ const AboutUsConsultation = () => {
                 <form name="call" className="connection-form">
                     <label htmlFor="phone" className="connection-form__label">
                         <input type="tel" autoComplete="on" placeholder="Телефон" className="connection-form__input" id="phone"/>
-                        <button className="primary-button connection-form__button" type="submit">Записаться на прием</button>
+                        <button 
+                            className="primary-button connection-form__button" 
+                            type="submit" 
+                            onClick={handleClick}
+                        >
+                            Записаться на прием
+                        </button>
                     </label>
                 </form>
                 <p className="connection-agreement-text">Записываясь на услугу вы даёте согласие

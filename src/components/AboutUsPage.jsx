@@ -4,12 +4,12 @@ import AboutUsPatientsTrustUs from '../components/AboutUsPatientsTrustUs.jsx';
 import AboutUsConsultation from '../components/AboutUsConsultation.jsx';
 import "../css/AboutUs.css";
 
-const AboutUsPage = () => {
+const AboutUsPage = ({ openModal }) => {
     return (
         <section className="about-us">
-            <AboutUsDescription/>
+            <AboutUsDescription onOpenModal={openModal}/>
             <AboutUsPatientsTrustUs/>
-            <AboutUsConsultation/>
+            <AboutUsConsultation onOpenModal={openModal}/>
         </section>
     )
 }

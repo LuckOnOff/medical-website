@@ -48,8 +48,20 @@
 .header-buttons {
   width: 100%;
 }
-.braces-img {
-  width: 95px;
+.header-buttons__heal.active {
+  background: rgb(197, 233, 245);
+}
+.header-buttons__hygiene.active {
+  background: rgb(197, 233, 245);
+}
+.header-buttons__braces.active {
+  background: rgb(197, 233, 245);
+}
+.header-buttons__childrensDentistry.active {
+  background: rgb(197, 233, 245);
+}
+.header-buttons__implants.active {
+  background: rgb(197, 233, 245);
 }
 
 .offers {
@@ -83,6 +95,12 @@
 .footer-buttons {
   width: 100%;
 }
-.veneers-img {
-  width: 100px;
+.footer-buttons__veneers.active {
+  background: rgb(197, 233, 245);
+}
+.footer-buttons__crowns.active {
+  background: rgb(197, 233, 245);
+}
+.footer-buttons__surgery.active {
+  background: rgb(197, 233, 245);
 }

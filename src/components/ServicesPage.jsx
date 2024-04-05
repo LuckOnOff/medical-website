@@ -1,22 +1,23 @@
 import React, { useState } from "react";
 import dentalHeal from "../img/main-services-dental-treatment.png";
-import hygiene from "../img/main-services-hygiene.jfif";
-import braces from "../img/main-services-braces.jfif";
-import childrensDentistry from "../img/main-services-children's-dentistry.jfif";
-import implants from "../img/main-services-implants.jfif";
-import veneers from "../img/main-services-veneers.jfif";
-import crowns from "../img/main-services-crowns.jfif";
-import surgery from "../img/main-services-surgery.jfif";
+import hygiene from "../img/main-services-hygiene.png";
+import braces from "../img/main-services-braces.png";
+import childrensDentistry from "../img/main-services-children's-dentistry.png";
+import implants from "../img/main-services-implants.png";
+import veneers from "../img/main-services-veneers.png";
+import crowns from "../img/main-services-crowns.png";
+import surgery from "../img/main-services-surgery.png";
 import CreateOffers from "./CreateOffers";
 import "../css/ServicesPage.css";
 
-const ServicesPage = () => {
+const ServicesPage = ({ openModal }) => {
     const [currentOffers, setCurrentOffers] = useState([
         {id: 1, title: 'Световая пломба', price: '1 000 руб.', buttonText: 'Записаться', category: 'dentalHeal'},
         {id: 2, title: 'Лечение кариеса', price: '2 000 руб.', buttonText: 'Записаться', category: 'dentalHeal'},
         {id: 3, title: 'Лечение пульпита', price: '3 000 руб.', buttonText: 'Записаться', category: 'dentalHeal'},
         {id: 4, title: 'Лечение кисты', price: '4 000 руб.', buttonText: 'Записаться', category: 'dentalHeal'}
     ]);
+    const [activeButton, setActiveButton] = useState('dentalHeal');
 
     const handleButtonClick = (category) => {
         let filteredOffers = allOffers.filter(offer => offer.category === category);
@@ -53,46 +54,91 @@ const ServicesPage = () => {
         {id: 27, title: 'Пломбирование канала', price: '6 700 руб.', buttonText: 'Записаться', category: 'surgery'},
         {id: 28, title: 'Вестибулопластика', price: '27 000 руб.', buttonText: 'Записаться', category: 'surgery'}
     ]
+    
+    const setButton = (category) => {
+        setActiveButton(category);
+    }
+
     return (
         <section className="services">
             <h2 className="services-title">Услуги</h2>
             <p className="services-subtitle">Мы постарались сделать прайс, максимально простым и понятным.</p>
             <section className="services-display">
                 <section className="services-display__header-buttons">
-                    <div className="header-buttons__heal" onClick={() => handleButtonClick('dentalHeal')}>
+                    <div className={activeButton === 'dentalHeal' ? 'header-buttons__heal active' : 'header-buttons__heal'} 
+                        onClick={() => { 
+                        handleButtonClick('dentalHeal'); 
+                        setButton('dentalHeal')
+                        }}
+                    >
                         <img src={dentalHeal} alt="Лечение зубов" className="heal-img"/>
                         <h3 className="heal-title">Лечение зубов</h3>
                     </div>
-                    <div className="header-buttons__hygiene" onClick={() => handleButtonClick('hygiene')}>
+                    <div className={activeButton === 'hygiene' ? 'header-buttons__hygiene active' : 'header-buttons__hygiene'} 
+                        onClick={() => {
+                            handleButtonClick('hygiene'); 
+                            setButton('hygiene')
+                        }}
+                    >
                         <img src={hygiene} alt="Гигиена" className="hygiene-img"/>
                         <h3 className="hygiene-title">Гигиена</h3>
                     </div>
-                    <div className="header-buttons__braces" onClick={() => handleButtonClick('braces')}>
+                    <div className={activeButton === 'braces' ? 'header-buttons__braces active' : 'header-buttons__braces'}
+                        onClick={() => { 
+                            handleButtonClick('braces'); 
+                            setButton('braces')
+                        }}
+                    >
                         <img src={braces} alt="Брекеты" className="braces-img"/>
                         <h3 className="braces-title">Брекеты</h3>
                     </div>
-                    <div className="header-buttons__childrensDentistry" onClick={() => handleButtonClick('childrensDentistry')}>
+                    <div className={activeButton === 'childrensDentistry' ? 'header-buttons__childrensDentistry active' : 'header-buttons__childrensDentistry'}
+                        onClick={() => { 
+                            handleButtonClick('childrensDentistry'); 
+                            setButton('childrensDentistry')
+                        }}
+                    >
                         <img src={childrensDentistry} alt="Детская стоматология" className="childrensDentistry-img"/>
                         <h3 className="childrensDentistry-title">Детская стоматология</h3>
                     </div>
-                    <div className="header-buttons__implants" onClick={() => handleButtonClick('implants')}>
+                    <div className={activeButton === 'implants' ? 'header-buttons__implants active' : 'header-buttons__implants'}
+                        onClick={() => {
+                            handleButtonClick('implants'); 
+                            setButton('implants')
+                        }}
+                    >
                         <img src={implants} alt="Импланты" className="implants-img"/>
                         <h3 className="implants-title">Импланты</h3>
                     </div>
                 </section>
                 <section className="services-display__offers">
-                    <CreateOffers offers={currentOffers}/>
+                    <CreateOffers offers={currentOffers} onOpenModal={openModal}/>
                 </section>
                 <section className="services-display__footer-buttons">
-                    <div className="footer-buttons__veneers" onClick={() => handleButtonClick('veneers')}>
+                    <div className={activeButton === 'veneers' ? 'footer-buttons__veneers active' : 'footer-buttons__veneers'} 
+                        onClick={() => { 
+                            handleButtonClick('veneers'); 
+                            setButton('veneers')
+                        }}
+                    >
                         <img src={veneers} alt="Виниры" className="veneers-img"/>
                         <h3 className="veneers-title">Виниры</h3>
                     </div>
-                    <div className="footer-buttons__crowns" onClick={() => handleButtonClick('crowns')}>
+                    <div className={activeButton === 'crowns' ? 'footer-buttons__crowns active' : 'footer-buttons__crowns'} 
+                        onClick={() => { 
+                            handleButtonClick('crowns'); 
+                            setButton('crowns')
+                        }}
+                    >
                         <img src={crowns} alt="Коронки" className="crowns-img"/>
                         <h3 className="crowns-title">Коронки</h3>
                     </div>
-                    <div className="footer-buttons__surgery" onClick={() => handleButtonClick('surgery')}>
+                    <div className={activeButton === 'surgery' ? 'footer-buttons__surgery active' : 'footer-buttons__surgery'}
+                        onClick={() => { 
+                            handleButtonClick('surgery'); 
+                            setButton('surgery')
+                        }}
+                    >
                         <img src={surgery} alt="Хирургия" className="surgery-img"/>
                         <h3 className="surgery-title">Хирургия</h3>
                     </div>
