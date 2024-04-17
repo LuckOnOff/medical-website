@@ -1,9 +1,7 @@
 import React from "react";
+import ModalButton from "./ModalButton";
 
-const CreateOffers = ({offers, onOpenModal}) => {
-  const handleClick = () => {
-    onOpenModal();
-  };
+const CreateOffers = ({offers}) => {
 
   if(offers.length < 1) return;
 
@@ -15,7 +13,7 @@ const CreateOffers = ({offers, onOpenModal}) => {
                 <h3 className='offers-container__title'>{offer.title}</h3>
                 <p className='offers-container__price'>{offer.price}</p>
               </div>
-              <button className='primary-button offers-container__button' onClick={handleClick}>{offer.buttonText}</button>
+              <ModalButton className='primary-button offers-container__button'>Заказать</ModalButton>
             </div>
           ))}
         </div>

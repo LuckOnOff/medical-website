@@ -2,11 +2,7 @@ import React from "react";
 import callWoman from "../img/main-consultation-woman.png";
 import "../css/AboutUsConsultation.css";
 
-const AboutUsConsultation = ({ onOpenModal }) => {
-    const handleClick = (e) => {
-        e.preventDefault();
-        onOpenModal();
-    };
+const AboutUsConsultation = () => {
     return (
         <section className="main-consultation">
             <section className="main-consultation__connection">
@@ -19,8 +15,7 @@ const AboutUsConsultation = ({ onOpenModal }) => {
                         <input type="tel" autoComplete="on" placeholder="Телефон" className="connection-form__input" id="phone"/>
                         <button 
                             className="primary-button connection-form__button" 
-                            type="submit" 
-                            onClick={handleClick}
+                            type="submit"
                         >
                             Записаться на прием
                         </button>

@@ -5,16 +5,13 @@ import calendar from '../img/calendar-icon.svg';
 import phone from '../img/phone-icon.svg';
 import '../css/Header.css';
 
-const Header = ({ onPageChange, onOpenModal }) => {
-    const [activeButton, setActiveButton] = useState('about');
+const Header = ({ onPageChange }) => {
+    const [activeButton, setActiveButton] = useState('about-item');
 
     const setButton = (page) => {
         setActiveButton(page);
     }
 
-    const handleClick = () => {
-        onOpenModal();
-    };
     return (
         <header className="header">
             <div className="header-logo-box">
@@ -27,48 +24,38 @@ const Header = ({ onPageChange, onOpenModal }) => {
                     <li>
                         <a
                             href="#"
-                            className={`header-nav-list__item about ${activeButton === 'about' ? 'active' : ''}`}
-                            onClick={() => { onPageChange('about'); setButton('about'); }}>
+                            className={`header-nav-list__item about-item ${activeButton === 'about-item' ? 'active' : ''}`}
+                            onClick={() => { onPageChange('about'); setButton('about-item'); }}>
                             О нас
                         </a>
                     </li>
                     <li>
                         <a
                             href="#"
-                            className={`header-nav-list__item services ${activeButton === 'services' && 'active'}`}
-                            onClick={() => { onPageChange('services'); setButton('services'); }}>
+                            className={`header-nav-list__item services-item ${activeButton === 'services-item' && 'active'}`}
+                            onClick={() => { onPageChange('services'); setButton('services-item'); }}>
                             Услуги
                         </a>
                     </li>
                     <li>
                         <a 
                             href="#" 
-                            className={`header-nav-list__item specialists ${activeButton === 'specialists' ? 'active' : ''}`} 
-                            onClick={() => { onPageChange('specialists'); setButton('specialists'); }}>
+                            className={`header-nav-list__item specialists-item ${activeButton === 'specialists-item' ? 'active' : ''}`} 
+                            onClick={() => { onPageChange('specialists'); setButton('specialists-item'); }}>
                             Специалисты
                         </a>
                     </li>
                     <li>
                         <a 
                             href="#" 
-                            className={`header-nav-list__item patients ${activeButton === 'patients' ? 'active' : ''}`}
-                            onClick={() => { onPageChange('patients'); setButton('patients'); }}>
+                            className={`header-nav-list__item patients-item ${activeButton === 'patients-item' ? 'active' : ''}`}
+                            onClick={() => { onPageChange('patients'); setButton('patients-item'); }}>
                             Пациентам
                         </a>
                     </li>
                 </ul>
             </nav>
             <section className="header-connections">
-                <section className="header-connections__adress">
-                    <a href="https://yandex.ru/maps/213/moscow/house/volgogradskiy_prospekt_4a/Z04YcABgTEUGQFtvfXtycHxhYA==/?ll=37.740006%2C55.739554&z=11.71" target="_blank" className="adress-box">
-                        <div className="adress-icon-box">
-                            <img src={location} alt="Местоположение" className="adress-icon-item"/>
-                        </div>
-                        <p className="adress-text">
-                            Москва, Волгоградский просп., 4А
-                        </p>
-                    </a>
-                </section>
                 <section className="header-connections__schedule">
                     <div className="schedule-icon-box">
                         <img src={calendar} alt="Календарь" className="schedule-icon-item"/>
@@ -91,8 +78,8 @@ const Header = ({ onPageChange, onOpenModal }) => {
                 </a>
                 </section>
             </section>
-            <button className="primary-button header-button" onClick={handleClick}>
-                Заказать звонок
+            <button className="primary-button header-button" onClick={() => {onPageChange('logIn'); setActiveButton('')}}>
+                войти
             </button>
         </header>
     )

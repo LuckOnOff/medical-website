@@ -13,7 +13,7 @@ const AboutUsPatientsTrustUs = () => {
                 </div>
                 <div className="reasons-two">
                     <h3 className="reasons-two__count">2</h3>
-                    <p className="reasons-two__title">Опытные Врачи</p>
+                    <p className="reasons-two__title">Опытные врачи</p>
                     <p className="reasons-two__subtitle">Врачи постоянно совершенствуются 
                     в своей специальности, несмотря 
                     на богатый опыт работы.</p>
