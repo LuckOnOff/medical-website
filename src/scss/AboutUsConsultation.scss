@@ -8,15 +8,18 @@
     @extend %flex-element-center;
     justify-content: space-between;
     width: 100%;
+    min-width: 300px;
     height: 350px;
     background: linear-gradient(45.00deg, rgb(230, 242, 255) 0%,rgb(250, 241, 237) 100%);
     position: relative;
     border-radius: 5px;
+    padding: 20px 15px 0 15px;
     &__connection {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        width: 410px;
+        width: 100%;
+        max-width: 410px;
         padding-left: 15px;
     }
 
@@ -27,10 +30,12 @@
     }
 
     &__img-item {
-        width: 500px;
-        height: 500px;
+        width: 35vw;
+        max-width: 500px;
+        min-width: 250px;
     }
 }
+
 .connection-title {
     font-size: 24px;
     font-weight: 700;
@@ -63,5 +68,30 @@
     &__button {
         width: 165px;
         height: 40px;
+    }
+}
+
+@media (max-width: 800px) {
+    .main-consultation {
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+
+        &__img-box {
+            position: relative;
+            right: 0;
+            bottom: 0;
+        }
+    }
+}
+
+@media (max-width: 492px) {
+    .connection-form__input {
+        width: 190px;
+        margin-bottom: 10px;
+    }
+    .connection-form__button {
+        width: 190px;
     }
 }

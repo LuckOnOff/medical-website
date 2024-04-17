@@ -34,6 +34,7 @@
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
+        flex-wrap: wrap;
     }
 }
 .reasons-one {
@@ -64,5 +65,14 @@
 
     &__title {
         @extend %title-style;
+    }
+}
+
+@media (max-width: 800px) {
+    .patients-trust {
+        margin-bottom: 60px;
+    }
+    .patients-trust__title {
+        margin-bottom: 30px;
     }
 }

@@ -15,6 +15,7 @@
 
 .header {
     @extend %flex-element-center;
+	justify-content: space-between;
 	width: 100%;
 	margin-bottom: 50px;
 }
@@ -27,30 +28,33 @@
 }
 .header-nav-list {
 	display: flex;
-		&__item {
-			margin-right: 30px;
-		}
+	flex-wrap: wrap;
+	justify-content: center;
+	& li {
+		margin-right: 30px;
+	}
 }
 
-.about.active {
+.about-item.active {
 	color: rgb(1, 103, 138);
 }
 
-.services.active {
+.services-item.active {
 	color: rgb(1, 103, 138);
 }
 
-.specialists.active {
+.specialists-item.active {
 	color: rgb(1, 103, 138);
 }
 
-.patients.active {
+.patients-item.active {
 	color: rgb(1, 103, 138);
 }
 
 .header-connections {
 	display: flex;
 	margin-right: 25px;
+	flex-wrap: wrap;
 		&__schedule {
 			@extend %flex-element-center;
 			margin-right: 20px;
@@ -102,6 +106,66 @@
 	@extend %flex-element-center;
 }
 .header-button {
-	width: 185px;
+	width: 125px;
 	height: 45px;
+}
+
+@media (max-width: 1056px) {
+	.header {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+}
+
+@media (max-width: 600px) {
+	.header {
+		flex-direction: column;
+	}
+	.header-logo-box {
+		margin-right: 0;
+	}
+
+	.header-connections {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		margin-bottom: 20px;
+		margin-right: 0;
+
+		&__schedule {
+			margin-bottom: 10px;
+		}
+	}
+
+	.header-nav-list {
+		margin-top: 20px;
+		margin-bottom: 20px;
+		& li {
+			margin-right: 20px;
+		}
+
+		& li:nth-last-child(1) {
+			margin-right: 0;
+		}
+	}
+}
+
+@media (max-width: 399px) {
+	.header-logo-box {
+		margin-right: 0;
+	}
+
+	.header-connections {
+		&__schedule {
+			margin-right: 0;
+		}
+	}
+
+	.header-nav-list {
+		
+		& li:nth-last-child(1) {
+			margin-top: 10px;
+		}
+	}
 }

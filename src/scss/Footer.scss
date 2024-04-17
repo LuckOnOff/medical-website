@@ -5,8 +5,8 @@
 }
 
 %size-icon {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
 }
 
 .footer {
@@ -14,12 +14,23 @@
     justify-content: space-between;
     width: 100%;
     margin-top: 50px;
+
+    &__adaptive-container {
+        @extend %flex-element-center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        margin: 0 20px;
+        width: 100%;
+    }
 }
 .footer-media-network {
+    display: flex;
+    justify-content: center;
+    align-items: center;
         &__vk-box {
             display: inline-block;
-            margin-right: 20px;
-            height: 30px;
+            margin-right: 25px;
+            height: 40px;
         }
 
 		&__vk {
@@ -28,8 +39,8 @@
 
         &__tg-box {
             display: inline-block;
-            margin-right: 20px;
-            height: 30px;
+            margin-right: 25px;
+            height: 40px;
         }
 
 		&__tg {
@@ -38,7 +49,7 @@
 
         &__email-box {
             display: inline-block;
-            height: 30px;
+            height: 40px;
         }
 
 		&__email {
@@ -48,6 +59,7 @@
 .footer-license {
     @extend %flex-element-center;
     flex-direction: column;
+    max-width: 300px;
 }
 .footer-personal-info {
     width: 200px;
@@ -59,5 +71,28 @@
     &__img {
         width: 65px;
         height: 60px;
+    }
+}
+
+@media (max-width: 950px) {
+    .footer__adaptive-container {
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 850px) {
+    .footer__adaptive-container {
+        margin: 25px 0;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer-license {
+        &__date {
+            margin-bottom: 20px;
+        }
     }
 }

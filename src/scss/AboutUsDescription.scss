@@ -14,15 +14,17 @@
     width: 40px;
     height: 40px;
 }
+
 .main-description {
     width: 100%;
-    height: 580px;
-    background: url(../img/main-description-bg.jpg) center/1775px no-repeat;
+    height: 500px;
+    background: url(../img/main-description-bg.jpg) center/1280px no-repeat;
     position: relative;
     margin-bottom: 80px;
     border-radius: 5px;
     &__info {
-        width: 460px;
+        width: 100%;
+        max-width: 460px;
         position: absolute;
         left: 0;
         top: 140px;
@@ -59,11 +61,13 @@
     }
 }
 .info-decorate-container {
-    width: 500px;
-    height: 580px;
-    background: linear-gradient(90.00deg, rgb(255, 255, 255) 48.074%,rgba(255, 255, 255, 0) 100%);
+    width: 40%;
+    height: 100%;
+    max-height: 500px;
+    min-height: 250px;
+    background: linear-gradient(90.00deg, rgb(255, 255, 255, 0.9) 48.074%,rgba(255, 255, 255, 0) 100%);
 }
-.info-conteiner {
+.info-container {
 
     &__location {
         line-height: 23px;
@@ -134,5 +138,64 @@
 
     &__text-box {
         width: 160px;
+    }
+}
+
+@media (max-width: 930px) {
+    .main-description {
+        display: flex;
+        background: none;
+        flex-direction: column;
+        height: 100%;
+        margin-bottom: 60px;
+        &__info {
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+
+        &__pluses {
+            position: relative;
+        }
+    }
+    .info-decorate-container {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .patients-trust__reasons {
+        gap: 25px 0;
+    }
+    .main-description__pluses-team,
+    .main-description__pluses-cabinet,
+    .main-description__pluses-location {
+        backdrop-filter: none;
+    }
+}
+
+@media (max-width: 800px) {
+    .info-conteiner__title {
+        font-size: 35px;
+    }
+    .main-description__pluses {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .main-description__pluses-team,
+    .main-description__pluses-location {
+        justify-content: flex-start;
+        margin-right: 0;
+        margin-left: 0;
+        width: 100%;
+        height: 100px;
+        border: 1px solid rgb(56, 188, 234);
+    }
+    .main-description__pluses-cabinet {
+        justify-content: flex-start;
+        width: 100%;
+        height: 100px;
+        border: 1px solid rgb(56, 188, 234);
+    }
+    .pluses-cabinet__icon-box {
+        margin-left: 3px;
     }
 }

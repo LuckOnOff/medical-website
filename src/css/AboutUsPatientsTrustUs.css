@@ -28,4 +28,14 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 800px) {
+  .patients-trust {
+    margin-bottom: 60px;
+  }
+  .patients-trust__title {
+    margin-bottom: 30px;
+  }
 }
