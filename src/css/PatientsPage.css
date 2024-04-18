@@ -21,7 +21,8 @@
   flex: 1;
 }
 .patients__slider {
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
   position: relative;
   overflow: hidden;
 }
@@ -47,25 +48,29 @@
   margin-right: 15px;
 }
 
+.healing-services-list-text {
+  width: 100%;
+  max-width: 250px;
+}
+
 .healing-services-list {
-  width: 250px;
+  margin: 20px 0;
+}
+.healing-services-list__item {
   margin-bottom: 10px;
 }
-
-.healing-services-list-top {
-  margin-bottom: 10px;
-}
-
-.healing-services-list-bottom {
-  margin-bottom: 10px;
+.healing-services-list__item:nth-last-child(1) {
+  margin-bottom: 0;
 }
 
 .healing-text-priorities {
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
 }
 
 .healing-box-img {
   justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
 .voxel-logo {
@@ -89,15 +94,31 @@
 }
 .slider__box-buttons {
   justify-content: space-between;
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
   margin-top: 10px;
 }
 
 .current-slide-img {
+  width: 100%;
   opacity: 0;
   transition: opacity 0.2s linear;
 }
 
 .current-slide-img.active {
   opacity: 1;
+}
+
+@media (max-width: 1000px) {
+  .patients {
+    flex-direction: column;
+  }
+  .healing-box-img {
+    margin: 15px 0;
+  }
+}
+@media (max-width: 600px) {
+  .healing-box-img {
+    justify-content: center;
+  }
 }

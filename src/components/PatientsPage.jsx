@@ -28,9 +28,13 @@ const PatientsPage = () => {
                     <img src={logo} alt="Логотип сайта" className="clinic-logo"/>
                     <span className="clinic-name">клиника</span>
                 </div>
-                <p className="healing-services-list">предоставляет весь спектр стоматологических услуг таких как :</p>
-                <p className="healing-services-list-top">Терапия Хирургия Ортодонтия</p>
-                <p className="healing-services-list-bottom">Детская стоматология Ортопедия</p>
+                <p className="healing-services-list-text">предоставляет весь спектр стоматологических услуг таких как:</p>
+                <ul className="healing-services-list">
+                    <li className="healing-services-list__item">- Терапия</li>
+                    <li className="healing-services-list__item">- Хирургия</li>
+                    <li className="healing-services-list__item">- Ортодонтия</li>
+                    <li className="healing-services-list__item">- Детская стоматология</li>
+                </ul>
                 <p className="healing-text-priorities">Приоритетным направлением является восстановление
                 функциональных возможностей зубочелюстной системы и профилактика заболевания полости рта.</p>
                 <div className="healing-box-img">
