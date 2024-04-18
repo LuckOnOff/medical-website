@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/medical-website/static/css/main.da62af44.css",
-    "main.js": "/medical-website/static/js/main.4f7345e5.js",
+    "main.css": "/medical-website/static/css/main.ca01bb8e.css",
+    "main.js": "/medical-website/static/js/main.86dedf00.js",
     "static/media/specialist-cart-man.png": "/medical-website/static/media/specialist-cart-man.97cb50325a2b6ef13519.png",
     "static/media/main-description-bg.jpg": "/medical-website/static/media/main-description-bg.e2c5e2ed267213e55c3c.jpg",
     "static/media/main-consultation-woman.png": "/medical-website/static/media/main-consultation-woman.dc7cb6bce1195727f86b.png",
@@ -13,7 +13,7 @@
     "static/media/patients-page-slider-img-two.jpg": "/medical-website/static/media/patients-page-slider-img-two.77c86605587dccfab686.jpg",
     "static/media/patients-page-voxel.png": "/medical-website/static/media/patients-page-voxel.1c01c044134f12df0cec.png",
     "static/media/main-description-armchair-icon.svg": "/medical-website/static/media/main-description-armchair-icon.e7486f6470e217692c54bfe8ff854f70.svg",
-    "static/media/main-description-doctor-icon.svg": "/medical-website/static/media/main-description-doctor-icon.2affaffc403156ef9b37f8f06a4053bf.svg",
+    "static/media/main-description-doctor-icon.svg": "/medical-website/static/media/main-description-doctor-icon.0d3884fe0e552398ff3312994da85fc3.svg",
     "static/media/calendar-icon.svg": "/medical-website/static/media/calendar-icon.b8148717b4e7e3fe707b3139d190f343.svg",
     "static/media/social-network-vk-icon.svg": "/medical-website/static/media/social-network-vk-icon.2701122717ced201b9c71ed7e0dac959.svg",
     "static/media/phone-icon.svg": "/medical-website/static/media/phone-icon.6cdb6d11b51128ac7297bd7a2fa50166.svg",
@@ -21,11 +21,11 @@
     "static/media/location-icon.svg": "/medical-website/static/media/location-icon.171f7c9fb854dc9b2bb5ddde2b288d5e.svg",
     "static/media/email-icon.svg": "/medical-website/static/media/email-icon.33a78295f8d77a99449e837cea7dae9e.svg",
     "index.html": "/medical-website/index.html",
-    "main.da62af44.css.map": "/medical-website/static/css/main.da62af44.css.map",
-    "main.4f7345e5.js.map": "/medical-website/static/js/main.4f7345e5.js.map"
+    "main.ca01bb8e.css.map": "/medical-website/static/css/main.ca01bb8e.css.map",
+    "main.86dedf00.js.map": "/medical-website/static/js/main.86dedf00.js.map"
   },
   "entrypoints": [
-    "static/css/main.da62af44.css",
-    "static/js/main.4f7345e5.js"
+    "static/css/main.ca01bb8e.css",
+    "static/js/main.86dedf00.js"
   ]
 }
