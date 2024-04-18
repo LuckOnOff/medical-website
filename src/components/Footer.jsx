@@ -19,18 +19,20 @@ const Footer = () => {
                     <img src={email} alt="Почта" className="footer-media-network__email"/>
                 </a>
             </section>
-            <section className="footer-license">
-                <div className="footer-license__item">
-                ООО «Дент», лицензия №ЛО-86-8681-01868686047 от 13.02.2019
-                </div>
-                <div className="footer-license__date">
-                    © 2024
-                </div>
-            </section>
-            <section className="footer-personal-info">
-                <a href="#" className="footer-personal-info__text">
-                    Политика в отношении обработки персональных данных
-                </a>
+            <section className="footer__adaptive-container">
+                <section className="footer-license">
+                    <div className="footer-license__item">
+                    ООО «Дент», лицензия №ЛО-86-8681-01868686047 от 13.02.2019
+                    </div>
+                    <div className="footer-license__date">
+                        © 2024
+                    </div>
+                </section>
+                <section className="footer-personal-info">
+                    <a href="#" className="footer-personal-info__text">
+                        Политика в отношении обработки персональных данных
+                    </a>
+                </section>
             </section>
             <section className="footer-logo-box">
                 <a href="#">
