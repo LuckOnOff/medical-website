@@ -42,17 +42,14 @@ const ModalButton = (props) => {
         <>
             {isOpen && (
                 <form className="window">
-                    <label htmlFor="tel-number" className="window__text">Укажите ваш номер для связи с вами</label>
-                    <input type="text" autoComplete="on" placeholder="Ваш номер телефона" className="window__input" id="tel-number"/>
-                    <div className="button-box">
-                        <input
-                        className="primary-button button-box__button-submit" 
-                        value='Заказать звонок' 
-                        type="submit" 
-                        onClick={toggleModal}
-                        />
-                        <input className="primary-button button-box__button-reset" value='Очистить поле' type="reset"/>
-                    </div>
+                    <label htmlFor="tel-number" className="window__text">Укажите ваш номер</label>
+                    <input type="tel" autoComplete="on" placeholder="Номер телефона" className="window__input" id="tel-number"/>
+                    <input
+                    className="primary-button window__button-submit" 
+                    value='Заказать звонок' 
+                    type="submit" 
+                    onClick={toggleModal}
+                    />
                 </form>
             )}
             <button onClick={toggleModal} className={props.className + ' ' + 'modal-button'}>{props.children}</button>

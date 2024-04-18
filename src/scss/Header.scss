@@ -36,19 +36,19 @@
 }
 
 .about-item.active {
-	color: rgb(1, 103, 138);
+	color: rgb(0, 84, 179);
 }
 
 .services-item.active {
-	color: rgb(1, 103, 138);
+	color: rgb(0, 84, 179);
 }
 
 .specialists-item.active {
-	color: rgb(1, 103, 138);
+	color: rgb(0, 84, 179);
 }
 
 .patients-item.active {
-	color: rgb(1, 103, 138);
+	color: rgb(0, 84, 179);
 }
 
 .header-connections {
@@ -89,9 +89,6 @@
 }
 .schedule-text-time {
 	@extend %icon-box-mr;
-}
-.schedule-text-days {
-	color: rgb(145, 145, 145);
 }
 .phone-icon-box {
 	@extend %icon-box-mr;
