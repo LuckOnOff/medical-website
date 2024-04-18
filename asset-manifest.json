@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/medical-website/static/css/main.da4242e4.css",
-    "main.js": "/medical-website/static/js/main.7dc61667.js",
+    "main.css": "/medical-website/static/css/main.9eec53eb.css",
+    "main.js": "/medical-website/static/js/main.37d10250.js",
     "static/media/specialist-cart-man.png": "/medical-website/static/media/specialist-cart-man.8f1db4bbb1da9605c369.png",
     "static/media/main-description-bg.jpg": "/medical-website/static/media/main-description-bg.e2c5e2ed267213e55c3c.jpg",
     "static/media/main-consultation-woman.png": "/medical-website/static/media/main-consultation-woman.dc7cb6bce1195727f86b.png",
@@ -21,11 +21,11 @@
     "static/media/location-icon.svg": "/medical-website/static/media/location-icon.171f7c9fb854dc9b2bb5ddde2b288d5e.svg",
     "static/media/email-icon.svg": "/medical-website/static/media/email-icon.33a78295f8d77a99449e837cea7dae9e.svg",
     "index.html": "/medical-website/index.html",
-    "main.da4242e4.css.map": "/medical-website/static/css/main.da4242e4.css.map",
-    "main.7dc61667.js.map": "/medical-website/static/js/main.7dc61667.js.map"
+    "main.9eec53eb.css.map": "/medical-website/static/css/main.9eec53eb.css.map",
+    "main.37d10250.js.map": "/medical-website/static/js/main.37d10250.js.map"
   },
   "entrypoints": [
-    "static/css/main.da4242e4.css",
-    "static/js/main.7dc61667.js"
+    "static/css/main.9eec53eb.css",
+    "static/js/main.37d10250.js"
   ]
 }
