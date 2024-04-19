@@ -5,7 +5,7 @@ import SpecialistsPage from "./SpecialistsPage.jsx";
 import PatientsPage from "./PatientsPage.jsx";
 import LogInPage from "./LogInPage.jsx";
 
-const Main = ({ currentPage}) => {
+const Main = ({ currentPage }) => {
     const renderPage = () => {
         switch (currentPage) {
             case 'about':

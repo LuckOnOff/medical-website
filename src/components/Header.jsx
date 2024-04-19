@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import logo from '../img/website-logo.jpg';
-import location from '../img/location-icon.svg';
 import calendar from '../img/calendar-icon.svg';
 import phone from '../img/phone-icon.svg';
 import '../css/Header.css';

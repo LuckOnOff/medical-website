@@ -7,8 +7,10 @@
 .footer-buttons__surgery, .footer-buttons__crowns, .footer-buttons__veneers, .header-buttons__implants, .header-buttons__childrensDentistry, .header-buttons__braces, .header-buttons__hygiene, .header-buttons__heal {
   flex-direction: column;
   cursor: pointer;
-  margin-right: 25px;
+  margin-right: 40px;
   width: 20%;
+  max-width: 170px;
+  min-width: 115px;
   height: 150px;
   border-radius: 5px;
   box-shadow: 0px 20px 50px 0px rgba(165, 165, 165, 0.2);
@@ -36,15 +38,22 @@
 
 .services-subtitle {
   width: 230px;
-  margin-bottom: 8px;
+  margin-bottom: 20px;
 }
 
 .services-display {
   width: 100%;
 }
+.services-display__header-buttons {
+  flex-wrap: wrap;
+}
 .services-display__offers {
   margin: 50px 0;
 }
+.services-display__footer-buttons {
+  flex-wrap: wrap;
+}
+
 .header-buttons {
   width: 100%;
 }
@@ -56,6 +65,10 @@
 }
 .header-buttons__braces.active {
   background: rgb(197, 233, 245);
+}
+.header-buttons__childrensDentistry {
+  max-width: 180px;
+  text-align: center;
 }
 .header-buttons__childrensDentistry.active {
   background: rgb(197, 233, 245);
@@ -81,15 +94,19 @@
   height: 50px;
   margin-left: 20px;
 }
+.offers-container__title {
+  margin-right: 15px;
+}
 
 .text-container {
   justify-content: space-between;
   width: 100%;
-  height: 50px;
+  height: 100%;
+  min-height: 50px;
   background: rgb(236, 236, 236);
   border-radius: 7px;
   margin-bottom: 15px;
-  padding: 0 15px;
+  padding: 15px;
 }
 
 .footer-buttons {
@@ -103,4 +120,34 @@
 }
 .footer-buttons__surgery.active {
   background: rgb(197, 233, 245);
+}
+
+@media (max-width: 1130px) {
+  .services-display__header-buttons {
+    gap: 25px;
+  }
+  .services-display__header-buttons div {
+    margin-right: 0;
+  }
+  .services-display__footer-buttons {
+    gap: 25px;
+  }
+  .services-display__footer-buttons div {
+    margin-right: 0;
+  }
+}
+@media (max-width: 830px) {
+  .offers-container {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  .services-display__offers {
+    margin: 50px 0 0 0;
+  }
+  .text-container {
+    margin-bottom: 10px;
+  }
+  .offers-container__button {
+    margin-bottom: 50px;
+  }
 }
