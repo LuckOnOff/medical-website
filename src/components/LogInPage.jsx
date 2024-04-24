@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from 'react-router-dom';
 import "../css/LogInPage.css";
 
-  const LogInPage = ({ onPageChange }) => {
+  const LogInPage = () => {
 
     return (
       <form className="log-in-form">
@@ -39,7 +39,7 @@ import "../css/LogInPage.css";
         </button>
         <div className="log-in-form__text-container">
           <p className="log-in-form__button-forgot-password">Забыли пароль?</p>
-          <p className="log-in-form__button-reg" onClick={() => onPageChange('registration')}>
+          <p className="log-in-form__button-reg">
             <Link to="/medical-website/registration">
               Зарегистрироваться
             </Link>
