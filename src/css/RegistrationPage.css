@@ -1,0 +1,152 @@
+.reg-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reg-form__password, .reg-form__email, .reg-form__last-name, .reg-form__first-name {
+  width: 100%;
+  max-width: 250px;
+  height: 50px;
+  border-radius: 8px;
+  padding: 5px 10px;
+  margin-bottom: 20px;
+  background: transparent;
+  border: 1px solid black;
+}
+
+.reg-form__subtitle-password, .reg-form__subtitle-email, .reg-form__subtitle-last-name, .reg-form__subtitle-first-name {
+  position: absolute;
+  z-index: 2;
+  left: 5.7px;
+  top: 16px;
+  color: black;
+  pointer-events: none;
+  transition: 0.1s linear;
+  padding: 0 10px;
+  background: #f1f1ff;
+}
+
+.reg-form {
+  flex-direction: column;
+  border: 1px solid blue;
+  border-radius: 8px;
+  background: #f1f1ff;
+  width: 100%;
+  max-width: 560px;
+  min-height: 300px;
+  padding: 25px;
+}
+.reg-form__first-name-box {
+  position: relative;
+}
+.reg-form__first-name {
+  outline: none;
+}
+.reg-form__first-name::-moz-placeholder {
+  opacity: 0;
+}
+.reg-form__first-name::placeholder {
+  opacity: 0;
+}
+.reg-form__first-name:focus:valid {
+  border: 1px solid green;
+}
+.reg-form__first-namel:focus:invalid {
+  border: 1px solid red;
+}
+.reg-form__first-name:not(:-moz-placeholder-shown) + .reg-form__subtitle-first-name {
+  transform: translateY(-22px);
+  font-size: 90%;
+}
+.reg-form__first-name:focus + .reg-form__subtitle-first-name, .reg-form__first-name:not(:placeholder-shown) + .reg-form__subtitle-first-name {
+  transform: translateY(-22px);
+  font-size: 90%;
+}
+.reg-form__last-name-box {
+  position: relative;
+}
+.reg-form__last-name {
+  outline: none;
+}
+.reg-form__last-name::-moz-placeholder {
+  opacity: 0;
+}
+.reg-form__last-name::placeholder {
+  opacity: 0;
+}
+.reg-form__last-name:focus:valid {
+  border: 1px solid green;
+}
+.reg-form__last-name:focus:invalid {
+  border: 1px solid red;
+}
+.reg-form__last-name:not(:-moz-placeholder-shown) + .reg-form__subtitle-last-name {
+  transform: translateY(-22px);
+  font-size: 90%;
+}
+.reg-form__last-name:focus + .reg-form__subtitle-last-name, .reg-form__last-name:not(:placeholder-shown) + .reg-form__subtitle-last-name {
+  transform: translateY(-22px);
+  font-size: 90%;
+}
+.reg-form__email-box {
+  position: relative;
+}
+.reg-form__email {
+  outline: none;
+}
+.reg-form__email::-moz-placeholder {
+  opacity: 0;
+}
+.reg-form__email::placeholder {
+  opacity: 0;
+}
+.reg-form__email:focus:valid {
+  border: 1px solid green;
+}
+.reg-form__email:focus:invalid {
+  border: 1px solid red;
+}
+.reg-form__email:not(:-moz-placeholder-shown) + .reg-form__subtitle-email {
+  transform: translateY(-22px);
+  font-size: 90%;
+}
+.reg-form__email:focus + .reg-form__subtitle-email, .reg-form__email:not(:placeholder-shown) + .reg-form__subtitle-email {
+  transform: translateY(-22px);
+  font-size: 90%;
+}
+.reg-form__password-box {
+  position: relative;
+}
+.reg-form__password {
+  outline: none;
+}
+.reg-form__password::-moz-placeholder {
+  opacity: 0;
+}
+.reg-form__password::placeholder {
+  opacity: 0;
+}
+.reg-form__password:focus:valid {
+  border: 1px solid green;
+}
+.reg-form__password:focus:invalid {
+  border: 1px solid red;
+}
+.reg-form__password:not(:-moz-placeholder-shown) + .reg-form__subtitle-password {
+  transform: translateY(-22px);
+  font-size: 90%;
+}
+.reg-form__password:focus + .reg-form__subtitle-password, .reg-form__password:not(:placeholder-shown) + .reg-form__subtitle-password {
+  transform: translateY(-22px);
+  font-size: 90%;
+}
+.reg-form__submit-button {
+  width: 200px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+.reg-form__log-in {
+  cursor: pointer;
+  border-bottom: 1px solid black;
+}

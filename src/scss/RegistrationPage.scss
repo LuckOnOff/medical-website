@@ -1,0 +1,175 @@
+%flex-element-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%input {
+    width: 100%;
+    max-width: 250px;
+    height: 50px;
+    border-radius: 8px;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+    background: transparent;
+    border: 1px solid black;
+}
+
+%subtitle {
+    position: absolute;
+    z-index: 2;
+    left: 5.7px;
+    top: 16px;
+    color: black;
+    pointer-events: none;
+    transition: 0.1s linear;
+    padding: 0 10px;
+    background: #f1f1ff;
+}
+
+.reg-form {
+    @extend %flex-element-center;
+    flex-direction: column;
+    border: 1px solid blue;
+    border-radius: 8px;
+    background: #f1f1ff;
+    width: 100%;
+    max-width: 560px;
+    min-height: 300px;
+    padding: 25px;
+
+    &__first-name-box {
+        position: relative;
+    }
+
+    &__first-name {
+        @extend %input;
+        outline: none;
+    }
+
+    &__first-name::placeholder {
+        opacity: 0;
+    }
+
+    &__first-name:focus:valid {
+        border: 1px solid green;
+    }
+
+    &__first-namel:focus:invalid {
+        border: 1px solid red;
+    }
+
+    &__subtitle-first-name {
+        @extend %subtitle;
+    }
+
+    &__first-name:focus + &__subtitle-first-name,
+    &__first-name:not(:placeholder-shown) + &__subtitle-first-name {
+        transform: translateY(-22px);
+        font-size: 90%;
+    }
+
+    &__last-name-box {
+        position: relative;
+    }
+
+    &__last-name {
+        @extend %input;
+        outline: none;
+    }
+
+    &__last-name::placeholder {
+        opacity: 0;
+    }
+
+    &__last-name:focus:valid {
+        border: 1px solid green;
+    }
+
+    &__last-name:focus:invalid {
+        border: 1px solid red;
+    }
+
+    &__subtitle-last-name {
+        @extend %subtitle;
+    }
+
+    &__last-name:focus + &__subtitle-last-name,
+    &__last-name:not(:placeholder-shown) + &__subtitle-last-name {
+        transform: translateY(-22px);
+        font-size: 90%;
+    }
+
+    &__email-box {
+        position: relative;
+    }
+
+    &__email {
+        @extend %input;
+        outline: none;
+    }
+
+    &__email::placeholder {
+        opacity: 0;
+    }
+
+    &__email:focus:valid {
+        border: 1px solid green;
+    }
+
+    &__email:focus:invalid {
+        border: 1px solid red;
+    }
+
+    &__subtitle-email {
+        @extend %subtitle;
+    }
+
+    &__email:focus + &__subtitle-email,
+    &__email:not(:placeholder-shown) + &__subtitle-email {
+        transform: translateY(-22px);
+        font-size: 90%;
+    }
+
+    &__password-box {
+        position: relative;
+    }
+
+    &__password {
+        @extend %input;
+        outline: none;
+    }
+
+    &__password::placeholder {
+        opacity: 0;
+    }
+
+    &__password:focus:valid {
+        border: 1px solid green;
+    }
+
+    &__password:focus:invalid {
+        border: 1px solid red;
+    }
+
+    &__subtitle-password {
+        @extend %subtitle;
+    }
+
+    &__password:focus + &__subtitle-password,
+    &__password:not(:placeholder-shown) + &__subtitle-password {
+        transform: translateY(-22px);
+        font-size: 90%;
+    }
+
+    &__submit-button {
+        width: 200px;
+        height: 50px;
+        margin-bottom: 20px;
+    }
+
+    &__log-in {
+        cursor: pointer;
+        border-bottom: 1px solid black;
+    }
+}

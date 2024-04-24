@@ -15,11 +15,6 @@
     border: 1px solid black;
 }
 
-%button {
-    width: 200px;
-    height: 50px;
-}
-
 %text {
     cursor: pointer;
     border-bottom: 1px solid black;
@@ -99,7 +94,8 @@
     }
 
     &__button-submit {
-        @extend %button;
+        width: 200px;
+        height: 50px;
         margin-bottom: 20px;
     }
     
