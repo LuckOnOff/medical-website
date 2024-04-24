@@ -89,7 +89,9 @@
     .footer {
         flex-direction: column;
     }
+}
 
+@media (max-width: 577px) {
     .footer-license {
         &__date {
             margin-bottom: 20px;

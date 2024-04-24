@@ -1,0 +1,141 @@
+%flex-element-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%input {
+    width: 100%;
+    max-width: 250px;
+    height: 50px;
+    border-radius: 8px;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+    background: transparent;
+    border: 1px solid black;
+}
+
+%button {
+    width: 200px;
+    height: 50px;
+}
+
+%text {
+    cursor: pointer;
+    border-bottom: 1px solid black;
+}
+
+%subtitle {
+    position: absolute;
+    z-index: 2;
+    left: 5.7px;
+    top: 16px;
+    color: black;
+    pointer-events: none;
+    transition: 0.1s linear;
+    padding: 0 10px;
+    background: #f1f1ff;
+}
+
+.log-in-form {
+    @extend %flex-element-center;
+    flex-direction: column;
+    border: 1px solid blue;
+    border-radius: 8px;
+    background: #f1f1ff;
+    width: 100%;
+    max-width: 560px;
+    min-height: 300px;
+    padding: 15px;
+
+    &__email-box {
+        position: relative;
+    }
+
+    &__email {
+        @extend %input;
+        outline: none;
+    }
+
+    &__email::placeholder {
+        opacity: 0;
+    }
+
+    &__email:focus:valid {
+        border: 1px solid green;
+    }
+
+    &__email:focus:invalid {
+        border: 1px solid red;
+    }
+
+    &__subtitle-email {
+        @extend %subtitle;
+    }
+
+    &__password-box {
+        position: relative;
+    }
+
+    &__password {
+        @extend %input;
+        outline: none;
+    }
+
+    &__password::placeholder {
+        opacity: 0;
+    }
+
+    &__password:focus:valid {
+        border: 1px solid green;
+    }
+
+    &__password:focus:invalid {
+        border: 1px solid red;
+    }
+
+    &__subtitle-password {
+        @extend %subtitle;
+    }
+
+    &__button-submit {
+        @extend %button;
+        margin-bottom: 20px;
+    }
+    
+    &__text-container {
+        @extend %flex-element-center;
+    }
+
+    &__button-reg {
+        @extend %text;
+    }
+
+    &__button-forgot-password {
+        @extend %text;
+        margin-right: 25px;
+    }
+
+    &__email:focus + &__subtitle-email,
+    &__email:not(:placeholder-shown) + &__subtitle-email {
+        transform: translateY(-22px);
+        font-size: 90%;
+    }
+
+    &__password:focus + &__subtitle-password,
+    &__password:not(:placeholder-shown) + &__subtitle-password {
+        transform: translateY(-22px);
+        font-size: 90%;
+    }
+}
+
+@media (max-width: 400px) {
+    .log-in-form__text-container {
+        flex-direction: column;
+    }
+
+    .log-in-form__button-forgot-password {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+}

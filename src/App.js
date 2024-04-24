@@ -15,7 +15,7 @@ function App() {
   return (
     <section className='container'>
         <Header onPageChange={handlePageChange}/>
-        <Main currentPage={currentPage}/>
+        <Main currentPage={currentPage} onPageChange={handlePageChange}/>
         <Footer/>
     </section>
   );

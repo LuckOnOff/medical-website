@@ -1,0 +1,117 @@
+.log-in-form__text-container, .log-in-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.log-in-form__password, .log-in-form__email {
+  width: 100%;
+  max-width: 250px;
+  height: 50px;
+  border-radius: 8px;
+  padding: 5px 10px;
+  margin-bottom: 20px;
+  background: transparent;
+  border: 1px solid black;
+}
+
+.log-in-form__button-submit {
+  width: 200px;
+  height: 50px;
+}
+
+.log-in-form__button-forgot-password, .log-in-form__button-reg {
+  cursor: pointer;
+  border-bottom: 1px solid black;
+}
+
+.log-in-form__subtitle-password, .log-in-form__subtitle-email {
+  position: absolute;
+  z-index: 2;
+  left: 5.7px;
+  top: 16px;
+  color: black;
+  pointer-events: none;
+  transition: 0.1s linear;
+  padding: 0 10px;
+  background: #f1f1ff;
+}
+
+.log-in-form {
+  flex-direction: column;
+  border: 1px solid blue;
+  border-radius: 8px;
+  background: #f1f1ff;
+  width: 100%;
+  max-width: 560px;
+  min-height: 300px;
+  padding: 15px;
+}
+.log-in-form__email-box {
+  position: relative;
+}
+.log-in-form__email {
+  outline: none;
+}
+.log-in-form__email::-moz-placeholder {
+  opacity: 0;
+}
+.log-in-form__email::placeholder {
+  opacity: 0;
+}
+.log-in-form__email:focus:valid {
+  border: 1px solid green;
+}
+.log-in-form__email:focus:invalid {
+  border: 1px solid red;
+}
+.log-in-form__password-box {
+  position: relative;
+}
+.log-in-form__password {
+  outline: none;
+}
+.log-in-form__password::-moz-placeholder {
+  opacity: 0;
+}
+.log-in-form__password::placeholder {
+  opacity: 0;
+}
+.log-in-form__password:focus:valid {
+  border: 1px solid green;
+}
+.log-in-form__password:focus:invalid {
+  border: 1px solid red;
+}
+.log-in-form__button-submit {
+  margin-bottom: 20px;
+}
+.log-in-form__button-forgot-password {
+  margin-right: 25px;
+}
+.log-in-form__email:not(:-moz-placeholder-shown) + .log-in-form__subtitle-email {
+  transform: translateY(-22px);
+  font-size: 90%;
+}
+.log-in-form__email:focus + .log-in-form__subtitle-email, .log-in-form__email:not(:placeholder-shown) + .log-in-form__subtitle-email {
+  transform: translateY(-22px);
+  font-size: 90%;
+}
+.log-in-form__password:not(:-moz-placeholder-shown) + .log-in-form__subtitle-password {
+  transform: translateY(-22px);
+  font-size: 90%;
+}
+.log-in-form__password:focus + .log-in-form__subtitle-password, .log-in-form__password:not(:placeholder-shown) + .log-in-form__subtitle-password {
+  transform: translateY(-22px);
+  font-size: 90%;
+}
+
+@media (max-width: 400px) {
+  .log-in-form__text-container {
+    flex-direction: column;
+  }
+  .log-in-form__button-forgot-password {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+}
