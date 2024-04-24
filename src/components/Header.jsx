@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from 'react-router-dom';
 import logo from '../img/website-logo.jpg';
 import calendar from '../img/calendar-icon.svg';
 import phone from '../img/phone-icon.svg';
@@ -21,36 +22,39 @@ const Header = ({ onPageChange }) => {
             <nav>
                 <ul className="header-nav-list">
                     <li>
-                        <a
-                            href="#"
-                            className={`header-nav-list__item about-item ${activeButton === 'about-item' ? 'active' : ''}`}
-                            onClick={() => { onPageChange('about'); setButton('about-item'); }}>
+                        <Link 
+                            className={`header-nav-list__item about-item ${activeButton === 'about-item' ? 'active' : ''}`} 
+                            to="/medical-website/about" 
+                            onClick={() => {onPageChange('about'); setButton('about-item'); }}
+                        >
                             О нас
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a
-                            href="#"
-                            className={`header-nav-list__item services-item ${activeButton === 'services-item' && 'active'}`}
-                            onClick={() => { onPageChange('services'); setButton('services-item'); }}>
+                        <Link
+                            className={`header-nav-list__item services-item ${activeButton === 'services-item' ? 'active' : ''}`}  
+                            to="/medical-website/services" 
+                            onClick={() => {onPageChange('services'); setButton('services-item'); }}
+                        >
                             Услуги
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a 
-                            href="#" 
+                        <Link 
+                            to="/medical-website/specialists"
                             className={`header-nav-list__item specialists-item ${activeButton === 'specialists-item' ? 'active' : ''}`} 
-                            onClick={() => { onPageChange('specialists'); setButton('specialists-item'); }}>
+                            onClick={() => { onPageChange('specialists'); setButton('specialists-item'); }}
+                        >
                             Специалисты
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a 
-                            href="#" 
+                        <Link
+                            to="/medical-website/patients" 
                             className={`header-nav-list__item patients-item ${activeButton === 'patients-item' ? 'active' : ''}`}
                             onClick={() => { onPageChange('patients'); setButton('patients-item'); }}>
                             Пациентам
-                        </a>
+                        </Link>
                     </li>
                 </ul>
             </nav>
@@ -77,9 +81,11 @@ const Header = ({ onPageChange }) => {
                 </a>
                 </section>
             </section>
+            <Link to="/medical-website/logIn">
             <button className="primary-button header-button" onClick={() => {onPageChange('logIn'); setActiveButton('')}}>
                 войти
             </button>
+            </Link>
         </header>
     )
 }

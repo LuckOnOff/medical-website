@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import "../css/RegistrationPage.css";
 
 const RegistrationPage = ({ onPageChange }) => {
@@ -52,7 +53,11 @@ const RegistrationPage = ({ onPageChange }) => {
         <p className="reg-form__subtitle-password">Пароль</p>
       </div>
       <button className="primary-button reg-form__submit-button" type="submit">Зарегистрироваться</button>
-      <p className="reg-form__log-in" type="button" onClick={() => onPageChange('logIn')}>Войти</p>
+      <p className="reg-form__log-in" type="button" onClick={() => onPageChange('logIn')}>
+        <Link to="/medical-website/logIn">
+          Войти
+        </Link>
+      </p>
     </form>
   )
 

@@ -78,6 +78,10 @@
   height: 45px;
 }
 
+.header-button a {
+  color: white;
+}
+
 @media (max-width: 1056px) {
   .header {
     display: flex;
