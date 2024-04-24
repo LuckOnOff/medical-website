@@ -12,19 +12,14 @@ import './css/App.css';
 
 
 function App() {
-  const [currentPage, setCurrentPage] = useState('about');
-
-  const handlePageChange = (page) => {
-    setCurrentPage(page);
-  };
 
   return (
     <BrowserRouter> 
       <section className='container'> 
-        <Header onPageChange={handlePageChange} />
+        <Header/>
         <main className='main'>
         <Routes>
-            <Route path="/medical-website/about" element={<AboutUsPage/>} />
+            <Route path="/medical-website" element={<AboutUsPage/>} />
             <Route path="/medical-website/services" element={<ServicesPage/>} />
             <Route path="/medical-website/specialists" element={<SpecialistsPage/>} />
             <Route path="/medical-website/patients" element={<PatientsPage/>} />

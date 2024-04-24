@@ -5,7 +5,7 @@ import calendar from '../img/calendar-icon.svg';
 import phone from '../img/phone-icon.svg';
 import '../css/Header.css';
 
-const Header = ({ onPageChange }) => {
+const Header = () => {
     const [activeButton, setActiveButton] = useState('about-item');
 
     const setButton = (page) => {
@@ -24,8 +24,8 @@ const Header = ({ onPageChange }) => {
                     <li>
                         <Link 
                             className={`header-nav-list__item about-item ${activeButton === 'about-item' ? 'active' : ''}`} 
-                            to="/medical-website/about" 
-                            onClick={() => {onPageChange('about'); setButton('about-item'); }}
+                            to="/medical-website" 
+                            onClick={() => setButton('about-item')}
                         >
                             О нас
                         </Link>
@@ -34,7 +34,7 @@ const Header = ({ onPageChange }) => {
                         <Link
                             className={`header-nav-list__item services-item ${activeButton === 'services-item' ? 'active' : ''}`}  
                             to="/medical-website/services" 
-                            onClick={() => {onPageChange('services'); setButton('services-item'); }}
+                            onClick={() => setButton('services-item')}
                         >
                             Услуги
                         </Link>
@@ -43,7 +43,7 @@ const Header = ({ onPageChange }) => {
                         <Link 
                             to="/medical-website/specialists"
                             className={`header-nav-list__item specialists-item ${activeButton === 'specialists-item' ? 'active' : ''}`} 
-                            onClick={() => { onPageChange('specialists'); setButton('specialists-item'); }}
+                            onClick={() => setButton('specialists-item')}
                         >
                             Специалисты
                         </Link>
@@ -52,7 +52,7 @@ const Header = ({ onPageChange }) => {
                         <Link
                             to="/medical-website/patients" 
                             className={`header-nav-list__item patients-item ${activeButton === 'patients-item' ? 'active' : ''}`}
-                            onClick={() => { onPageChange('patients'); setButton('patients-item'); }}>
+                            onClick={() => setButton('patients-item')}>
                             Пациентам
                         </Link>
                     </li>
@@ -82,7 +82,7 @@ const Header = ({ onPageChange }) => {
                 </section>
             </section>
             <Link to="/medical-website/logIn">
-            <button className="primary-button header-button" onClick={() => {onPageChange('logIn'); setActiveButton('')}}>
+            <button className="primary-button header-button" onClick={() =>setActiveButton('')}>
                 войти
             </button>
             </Link>
