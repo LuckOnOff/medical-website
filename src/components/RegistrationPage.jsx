@@ -54,7 +54,7 @@ const RegistrationPage = () => {
       </div>
       <button className="primary-button reg-form__submit-button" type="submit">Зарегистрироваться</button>
       <p className="reg-form__log-in" type="button">
-        <Link to="/medical-website/logIn">
+        <Link to="/logIn">
           Войти
         </Link>
       </p>

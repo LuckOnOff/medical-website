@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../img/website-logo.jpg";
+import logo from "../img/website-logo.png";
 import voxelLogo from "../img/patients-page-voxel.png";
 import ortholightLogo from "../img/patients-page-ortholight.png";
 import rocadamedLogo from "../img/patients-page-rocadamed.png";

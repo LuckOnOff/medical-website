@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/Header.jsx';
 import Footer from './components/Footer.jsx';
 import AboutUsPage from "./components/AboutUsPage.jsx";
@@ -13,22 +13,22 @@ import './css/App.css';
 function App() {
 
   return (
-    <BrowserRouter> 
+    <HashRouter> 
       <section className='container'> 
         <Header/>
         <main className='main'>
         <Routes>
-            <Route path="/medical-website" element={<AboutUsPage/>} />
-            <Route path="/medical-website/services" element={<ServicesPage/>} />
-            <Route path="/medical-website/specialists" element={<SpecialistsPage/>} />
-            <Route path="/medical-website/patients" element={<PatientsPage/>} />
-            <Route path="/medical-website/login" element={<LogInPage/>} />
-            <Route path="/medical-website/registration" element={<RegistrationPage/>} />
+            <Route path="/" element={<AboutUsPage/>} />
+            <Route path="/services" element={<ServicesPage/>} />
+            <Route path="/specialists" element={<SpecialistsPage/>} />
+            <Route path="/patients" element={<PatientsPage/>} />
+            <Route path="/login" element={<LogInPage/>} />
+            <Route path="/registration" element={<RegistrationPage/>} />
         </Routes> 
         </main>
         <Footer/> 
       </section> 
-    </BrowserRouter> 
+    </HashRouter> 
   );
 }
 

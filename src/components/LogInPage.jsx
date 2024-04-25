@@ -40,7 +40,7 @@ import "../css/LogInPage.css";
         <div className="log-in-form__text-container">
           <p className="log-in-form__button-forgot-password">Забыли пароль?</p>
           <p className="log-in-form__button-reg">
-            <Link to="/medical-website/registration">
+            <Link to="/registration">
               Зарегистрироваться
             </Link>
             </p>

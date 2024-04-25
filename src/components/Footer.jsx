@@ -2,7 +2,7 @@ import React from "react";
 import vk from "../img/social-network-vk-icon.svg";
 import tg from "../img/social-network-tg-icon.svg";
 import email from "../img/email-icon.svg";
-import logo from "../img/website-logo.jpg";
+import logo from "../img/website-logo.png";
 import "../css/Footer.css";
 
 const Footer = () => {

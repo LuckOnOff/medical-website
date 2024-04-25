@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from 'react-router-dom';
-import logo from '../img/website-logo.jpg';
+import logo from '../img/website-logo.png';
 import calendar from '../img/calendar-icon.svg';
 import phone from '../img/phone-icon.svg';
 import '../css/Header.css';
@@ -24,7 +24,7 @@ const Header = () => {
                     <li>
                         <Link 
                             className={`header-nav-list__item about-item ${activeButton === 'about-item' ? 'active' : ''}`} 
-                            to="/medical-website" 
+                            to="/" 
                             onClick={() => setButton('about-item')}
                         >
                             О нас
@@ -33,7 +33,7 @@ const Header = () => {
                     <li>
                         <Link
                             className={`header-nav-list__item services-item ${activeButton === 'services-item' ? 'active' : ''}`}  
-                            to="/medical-website/services" 
+                            to="/services" 
                             onClick={() => setButton('services-item')}
                         >
                             Услуги
@@ -41,7 +41,7 @@ const Header = () => {
                     </li>
                     <li>
                         <Link 
-                            to="/medical-website/specialists"
+                            to="/specialists"
                             className={`header-nav-list__item specialists-item ${activeButton === 'specialists-item' ? 'active' : ''}`} 
                             onClick={() => setButton('specialists-item')}
                         >
@@ -50,7 +50,7 @@ const Header = () => {
                     </li>
                     <li>
                         <Link
-                            to="/medical-website/patients" 
+                            to="/patients" 
                             className={`header-nav-list__item patients-item ${activeButton === 'patients-item' ? 'active' : ''}`}
                             onClick={() => setButton('patients-item')}>
                             Пациентам
@@ -81,7 +81,7 @@ const Header = () => {
                 </a>
                 </section>
             </section>
-            <Link to="/medical-website/logIn">
+            <Link to="/logIn">
             <button className="primary-button header-button" onClick={() =>setActiveButton('')}>
                 войти
             </button>
