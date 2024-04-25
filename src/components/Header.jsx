@@ -1,63 +1,56 @@
-import React, { useState } from "react";
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link, NavLink, useLocation } from 'react-router-dom';
 import logo from '../img/website-logo.png';
 import calendar from '../img/calendar-icon.svg';
 import phone from '../img/phone-icon.svg';
 import '../css/Header.css';
 
 const Header = () => {
-    const [activeButton, setActiveButton] = useState('about-item');
-
-    const setButton = (page) => {
-        setActiveButton(page);
-    }
+    const location = useLocation();
 
     return (
         <header className="header">
             <div className="header-logo-box">
-                <a href="#">
+                <Link to="/">
                     <img src={logo} alt="логотип сайта" className="header-logo-item"/>
-                </a>
+                </Link>
             </div>
             <nav>
-                <ul className="header-nav-list">
-                    <li>
-                        <Link 
-                            className={`header-nav-list__item about-item ${activeButton === 'about-item' ? 'active' : ''}`} 
-                            to="/" 
-                            onClick={() => setButton('about-item')}
-                        >
-                            О нас
-                        </Link>
-                    </li>
-                    <li>
-                        <Link
-                            className={`header-nav-list__item services-item ${activeButton === 'services-item' ? 'active' : ''}`}  
-                            to="/services" 
-                            onClick={() => setButton('services-item')}
-                        >
-                            Услуги
-                        </Link>
-                    </li>
-                    <li>
-                        <Link 
-                            to="/specialists"
-                            className={`header-nav-list__item specialists-item ${activeButton === 'specialists-item' ? 'active' : ''}`} 
-                            onClick={() => setButton('specialists-item')}
-                        >
-                            Специалисты
-                        </Link>
-                    </li>
-                    <li>
-                        <Link
-                            to="/patients" 
-                            className={`header-nav-list__item patients-item ${activeButton === 'patients-item' ? 'active' : ''}`}
-                            onClick={() => setButton('patients-item')}>
-                            Пациентам
-                        </Link>
-                    </li>
-                </ul>
-            </nav>
+            <ul className="header-nav-list">
+                <li>
+                    <NavLink 
+                        className={`header-nav-list__item about-item ${location.pathname === '/' ? 'active' : ''}`} 
+                        to="/" 
+                    >
+                        О нас
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink 
+                        className={`header-nav-list__item services-item ${location.pathname === '/services' ? 'active' : ''}`}  
+                        to="/services" 
+                    >
+                        Услуги
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink 
+                        className={`header-nav-list__item specialists-item ${location.pathname === '/specialists' ? 'active' : ''}`} 
+                        to="/specialists"
+                    >
+                        Специалисты
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink 
+                        className={`header-nav-list__item patients-item ${location.pathname === '/patients' ? 'active' : ''}`} 
+                        to="/patients"
+                    >
+                        Пациентам
+                    </NavLink>
+                </li>
+            </ul>
+        </nav>
             <section className="header-connections">
                 <section className="header-connections__schedule">
                     <div className="schedule-icon-box">
@@ -82,7 +75,7 @@ const Header = () => {
                 </section>
             </section>
             <Link to="/logIn">
-            <button className="primary-button header-button" onClick={() =>setActiveButton('')}>
+            <button className="primary-button header-button">
                 войти
             </button>
             </Link>

@@ -98,6 +98,10 @@
 }
 .phone-number {
 	font-weight: 700;
+	transition: all 0.2s linear;
+}
+.phone-number:hover {
+	color: blue;
 }
 .phone-box {
 	@extend %flex-element-center;

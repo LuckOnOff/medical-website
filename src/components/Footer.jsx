@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import vk from "../img/social-network-vk-icon.svg";
 import tg from "../img/social-network-tg-icon.svg";
 import email from "../img/email-icon.svg";
@@ -6,13 +7,19 @@ import logo from "../img/website-logo.png";
 import "../css/Footer.css";
 
 const Footer = () => {
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth' // Делает прокрутку плавной, если браузер поддерживает
+        });
+    };
     return (
         <footer className="footer">
             <section className="footer-media-network">
-                <a href="#" className="footer-media-network__vk-box">
+                <a href="https://vk.com" className="footer-media-network__vk-box">
                     <img src={vk} alt="Вконтакте" className="footer-media-network__vk"/>
                 </a>
-                <a href="#" className="footer-media-network__tg-box">
+                <a href="https://telegram.org/" className="footer-media-network__tg-box">
                     <img src={tg} alt="Телеграм" className="footer-media-network__tg"/>
                 </a>
                 <a href="mailto:anyemail123@gmail.com" className="footer-media-network__email-box">
@@ -29,15 +36,15 @@ const Footer = () => {
                     </div>
                 </section>
                 <section className="footer-personal-info">
-                    <a href="#" className="footer-personal-info__text">
+                    <span className="footer-personal-info__text">
                         Политика в отношении обработки персональных данных
-                    </a>
+                    </span>
                 </section>
             </section>
             <section className="footer-logo-box">
-                <a href="#">
+                <Link to="/" onClick={scrollToTop}>
                     <img src={logo} alt="Логотип сайта" className="footer-logo-box__img"/>
-                </a>
+                </Link>
             </section>
         </footer>
     )

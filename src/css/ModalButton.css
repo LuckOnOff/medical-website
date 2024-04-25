@@ -7,11 +7,12 @@
   color: white;
   border-radius: 8px;
   width: 100%;
-  max-width: 380px;
+  max-width: 330px;
+  height: 200px;
   padding: 20px;
   position: fixed;
   top: 50%;
-  left: 50%;
+  left: 49%;
   transform: translate(-50%, -50%);
   z-index: 10;
 }
@@ -28,6 +29,15 @@
   padding: 0 10px;
   margin: 20px 0;
   border: 1px solid black;
+}
+.window__input::-webkit-outer-spin-button, .window__input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.window__input[type=number] {
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+          appearance: textfield;
 }
 .window__button-submit {
   width: 150px;

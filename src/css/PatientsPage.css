@@ -109,6 +109,22 @@
   opacity: 1;
 }
 
+.previous-button {
+  transition: all 0.3s linear;
+}
+
+.previous-button:hover {
+  background: rgb(233, 233, 233);
+}
+
+.next-button {
+  transition: all 0.3s linear;
+}
+
+.next-button:hover {
+  background: rgb(233, 233, 233);
+}
+
 @media (max-width: 1000px) {
   .patients {
     flex-direction: column;

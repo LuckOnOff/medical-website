@@ -171,5 +171,10 @@
     &__log-in {
         cursor: pointer;
         border-bottom: 1px solid black;
+        transition: all 0.2s linear;
+    }
+
+    &__log-in a:hover {
+        color: blue;
     }
 }

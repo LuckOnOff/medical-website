@@ -7,11 +7,12 @@
     color: white;
     border-radius: 8px;
     width: 100%;
-    max-width: 380px;
+    max-width: 330px;
+    height: 200px;
     padding: 20px;
     position: fixed;
     top: 50%;
-    left: 50%;
+    left: 49%;
     transform: translate(-50%, -50%);
     z-index: 10;
     &__text {
@@ -28,6 +29,17 @@
         padding: 0 10px;
         margin: 20px 0;
         border: 1px solid black;
+    }
+
+    &__input::-webkit-outer-spin-button,
+    &__input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    &__input[type=number]{
+        -moz-appearance: textfield;
+        appearance: textfield;
     }
 
     &__button-submit {

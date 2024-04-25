@@ -65,7 +65,12 @@
     width: 200px;
 		&__text {
             text-decoration: underline;
+            transition: all 0.2s linear;
+            cursor: pointer;
 		}
+        &__text:hover {
+            color: blue;
+        }
 }
 .footer-logo-box {
     &__img {

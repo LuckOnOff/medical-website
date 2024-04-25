@@ -52,7 +52,13 @@ const RegistrationPage = () => {
         />
         <p className="reg-form__subtitle-password">Пароль</p>
       </div>
-      <button className="primary-button reg-form__submit-button" type="submit">Зарегистрироваться</button>
+      <button 
+        className="primary-button reg-form__submit-button" 
+        type="submit" 
+        onClick={(e) => e.preventDefault()}
+      >
+        Зарегистрироваться
+      </button>
       <p className="reg-form__log-in" type="button">
         <Link to="/logIn">
           Войти

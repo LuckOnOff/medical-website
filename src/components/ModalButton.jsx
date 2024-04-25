@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import "../css/ModalButton.css";
 
 const ModalButton = (props) => {
@@ -9,9 +9,9 @@ const ModalButton = (props) => {
         body.classList.add('modal-open'); 
     }; 
  
-    const removeModalOpenClass = () => { 
+    const removeModalOpenClass = useCallback(() => { 
         body.classList.remove('modal-open'); 
-    };
+    }, [body.classList]); 
 
     const toggleModal = () => {
         setIsOpen(!isOpen); 
@@ -24,8 +24,8 @@ const ModalButton = (props) => {
     };
 
     useEffect(() => {
-        const handleOutsideClick = (event) => {
-            if (isOpen && !document.querySelector(".window").contains(event.target) && !document.querySelector(".modal-button").contains(event.target)) {
+        const handleOutsideClick = (e) => {
+            if (isOpen && !document.querySelector(".window").contains(e.target) && !document.querySelector(".modal-button").contains(e.target)) {
                 setIsOpen(false);
                 removeModalOpenClass();
             }
@@ -36,14 +36,20 @@ const ModalButton = (props) => {
         return () => {
             document.removeEventListener("mousedown", handleOutsideClick);
         };
-    }, [isOpen]);
+    }, [isOpen, removeModalOpenClass]);
 
     return (
         <>
             {isOpen && (
                 <form className="window">
                     <label htmlFor="tel-number" className="window__text">Укажите ваш номер</label>
-                    <input type="tel" autoComplete="on" placeholder="Номер телефона" className="window__input" id="tel-number"/>
+                    <input 
+                        type="number" 
+                        autoComplete="on" 
+                        placeholder="Номер телефона" 
+                        className="window__input" 
+                        id="tel-number"
+                    />
                     <input
                     className="primary-button window__button-submit" 
                     value='Заказать звонок' 
@@ -52,7 +58,7 @@ const ModalButton = (props) => {
                     />
                 </form>
             )}
-            <button onClick={toggleModal} className={props.className + ' ' + 'modal-button'}>{props.children}</button>
+            <button onClick={toggleModal} className={props.className + ' modal-button'}>{props.children}</button>
         </>
     );
 }

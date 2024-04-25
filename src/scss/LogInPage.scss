@@ -105,11 +105,21 @@
 
     &__button-reg {
         @extend %text;
+        transition: all 0.2s linear;
+    }
+
+    &__button-reg a:hover {
+        color: blue;
     }
 
     &__button-forgot-password {
         @extend %text;
         margin-right: 25px;
+        transition: all 0.2s linear;
+    }
+
+    &__button-forgot-password:hover {
+        color: blue;
     }
 
     &__email:focus + &__subtitle-email,

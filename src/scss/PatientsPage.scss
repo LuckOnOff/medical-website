@@ -107,9 +107,17 @@
 }
 .previous-button {
     @extend %button-slider-style;
+    transition: all 0.3s linear;
+}
+.previous-button:hover {
+    background: rgb(233, 233, 233)
 }
 .next-button {
     @extend %button-slider-style;
+    transition: all 0.3s linear;
+}
+.next-button:hover {
+    background: rgb(233, 233, 233);
 }
 
 @media (max-width: 1000px) {

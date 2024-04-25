@@ -83,8 +83,18 @@
   height: 50px;
   margin-bottom: 20px;
 }
+.log-in-form__button-reg {
+  transition: all 0.2s linear;
+}
+.log-in-form__button-reg a:hover {
+  color: blue;
+}
 .log-in-form__button-forgot-password {
   margin-right: 25px;
+  transition: all 0.2s linear;
+}
+.log-in-form__button-forgot-password:hover {
+  color: blue;
 }
 .log-in-form__email:not(:-moz-placeholder-shown) + .log-in-form__subtitle-email {
   transform: translateY(-22px);

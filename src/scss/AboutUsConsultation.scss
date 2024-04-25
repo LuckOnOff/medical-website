@@ -46,6 +46,7 @@
     margin-bottom: 12px;
     &__tel {
         color: blue;
+        margin-left: 7px;
     }
 }
 .connection-subtitle-two {
@@ -53,6 +54,11 @@
 }
 .personal-data {
     text-decoration: underline;
+    transition: all 0.2s linear;
+    cursor: pointer;
+}
+.personal-data:hover {
+    color: blue;
 }
 .connection-form {
     margin-bottom: 12px;
@@ -63,6 +69,17 @@
         padding-left: 10px;
         font-size: 17px;
         margin-right: 20px;
+    }
+
+    &__input::-webkit-outer-spin-button,
+    &__input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    &__input[type=number]{
+        -moz-appearance: textfield;
+        appearance: textfield;
     }
 
     &__button {

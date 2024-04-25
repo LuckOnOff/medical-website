@@ -50,6 +50,11 @@
 }
 .footer-personal-info__text {
   text-decoration: underline;
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+.footer-personal-info__text:hover {
+  color: blue;
 }
 
 .footer-logo-box__img {
