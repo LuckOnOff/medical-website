@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/medical-website/static/css/main.c5b25809.css",
-    "main.js": "/medical-website/static/js/main.61fd50bc.js",
+    "main.js": "/medical-website/static/js/main.58082c2b.js",
     "static/media/specialist-cart-man.png": "/medical-website/static/media/specialist-cart-man.8f1db4bbb1da9605c369.png",
     "static/media/main-description-bg.jpg": "/medical-website/static/media/main-description-bg.e2c5e2ed267213e55c3c.jpg",
     "static/media/main-consultation-woman.png": "/medical-website/static/media/main-consultation-woman.dc7cb6bce1195727f86b.png",
@@ -23,10 +23,10 @@
     "index.html": "/medical-website/index.html",
     "static/media/email-icon.svg": "/medical-website/static/media/email-icon.33a78295f8d77a99449e837cea7dae9e.svg",
     "main.c5b25809.css.map": "/medical-website/static/css/main.c5b25809.css.map",
-    "main.61fd50bc.js.map": "/medical-website/static/js/main.61fd50bc.js.map"
+    "main.58082c2b.js.map": "/medical-website/static/js/main.58082c2b.js.map"
   },
   "entrypoints": [
     "static/css/main.c5b25809.css",
-    "static/js/main.61fd50bc.js"
+    "static/js/main.58082c2b.js"
   ]
 }
