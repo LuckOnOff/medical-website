@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://luckonoff.github.io/medical-website/sitemap.xml
