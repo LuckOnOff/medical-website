@@ -1,12 +1,13 @@
 {
   "files": {
     "main.css": "/medical-website/static/css/main.c5b25809.css",
-    "main.js": "/medical-website/static/js/main.865785d3.js",
+    "main.js": "/medical-website/static/js/main.61fd50bc.js",
     "static/media/specialist-cart-man.png": "/medical-website/static/media/specialist-cart-man.8f1db4bbb1da9605c369.png",
     "static/media/main-description-bg.jpg": "/medical-website/static/media/main-description-bg.e2c5e2ed267213e55c3c.jpg",
     "static/media/main-consultation-woman.png": "/medical-website/static/media/main-consultation-woman.dc7cb6bce1195727f86b.png",
     "static/media/patients-page-slider-img-one.png": "/medical-website/static/media/patients-page-slider-img-one.374fac6c7f06f04449d8.png",
     "static/media/patients-page-slider-img-three.jpg": "/medical-website/static/media/patients-page-slider-img-three.8a9976b6490987fcaa2d.jpg",
+    "static/media/website-logo.png": "/medical-website/static/media/website-logo.38ed05fceb002868b49f.png",
     "static/media/patients-page-slider-img-five.jpg": "/medical-website/static/media/patients-page-slider-img-five.8f5d647162ea5f1eaf60.jpg",
     "static/media/patients-page-slider-img-four.jpg": "/medical-website/static/media/patients-page-slider-img-four.a9bbd92ab6c673ae0170.jpg",
     "static/media/patients-page-rocadamed.png": "/medical-website/static/media/patients-page-rocadamed.f6fe4d4519aab37d9850.png",
@@ -22,10 +23,10 @@
     "index.html": "/medical-website/index.html",
     "static/media/email-icon.svg": "/medical-website/static/media/email-icon.33a78295f8d77a99449e837cea7dae9e.svg",
     "main.c5b25809.css.map": "/medical-website/static/css/main.c5b25809.css.map",
-    "main.865785d3.js.map": "/medical-website/static/js/main.865785d3.js.map"
+    "main.61fd50bc.js.map": "/medical-website/static/js/main.61fd50bc.js.map"
   },
   "entrypoints": [
     "static/css/main.c5b25809.css",
-    "static/js/main.865785d3.js"
+    "static/js/main.61fd50bc.js"
   ]
 }
