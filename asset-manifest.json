@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/medical-website/static/css/main.eb8524b7.css",
+    "main.css": "/medical-website/static/css/main.7f84a83a.css",
     "main.js": "/medical-website/static/js/main.7bb13f5b.js",
     "static/media/specialist-cart-man.png": "/medical-website/static/media/specialist-cart-man.8f1db4bbb1da9605c369.png",
     "static/media/main-description-bg.jpg": "/medical-website/static/media/main-description-bg.e2c5e2ed267213e55c3c.jpg",
@@ -22,11 +22,11 @@
     "static/media/location-icon.svg": "/medical-website/static/media/location-icon.171f7c9fb854dc9b2bb5ddde2b288d5e.svg",
     "index.html": "/medical-website/index.html",
     "static/media/email-icon.svg": "/medical-website/static/media/email-icon.33a78295f8d77a99449e837cea7dae9e.svg",
-    "main.eb8524b7.css.map": "/medical-website/static/css/main.eb8524b7.css.map",
+    "main.7f84a83a.css.map": "/medical-website/static/css/main.7f84a83a.css.map",
     "main.7bb13f5b.js.map": "/medical-website/static/js/main.7bb13f5b.js.map"
   },
   "entrypoints": [
-    "static/css/main.eb8524b7.css",
+    "static/css/main.7f84a83a.css",
     "static/js/main.7bb13f5b.js"
   ]
 }
