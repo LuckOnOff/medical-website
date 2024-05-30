@@ -53,7 +53,7 @@
     display: block;
 }
 .personal-data {
-    text-decoration: underline;
+    border-bottom: 1px solid black;
     transition: all 0.2s linear;
     cursor: pointer;
 }
@@ -110,5 +110,8 @@
     }
     .connection-form__button {
         width: 190px;
+    }
+    .connection-title {
+        font-size: 22px;
     }
 }

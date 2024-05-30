@@ -77,6 +77,10 @@
   background: rgb(197, 233, 245);
 }
 
+.heal-title {
+  text-align: center;
+}
+
 .offers {
   flex-direction: column;
   width: 100%;

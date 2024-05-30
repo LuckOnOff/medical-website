@@ -64,7 +64,7 @@
 .footer-personal-info {
     width: 200px;
 		&__text {
-            text-decoration: underline;
+            border-bottom: 1px solid black;
             transition: all 0.2s linear;
             cursor: pointer;
 		}
